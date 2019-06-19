@@ -2,6 +2,7 @@
 
 
 /* ------------------------ Section 1 ------------------------ */
+
 .socialbar .nav-link {
     font-family: Arial, Helvetica, sans-serif;
     color: gray;
@@ -209,6 +210,7 @@
     top: -3px;
 }
 
+
 /* ------------------------ Section 2 ------------------------ */
 
 .logos {
@@ -218,15 +220,22 @@
 
 /* ------------------------ Section 3 ------------------------ */
 
+
 /* ------------------------ Section 4 ------------------------ */
+
 
 /* ------------------------ Section 5 ------------------------ */
 
+
 /* ------------------------ Section 6 ------------------------ */
+
 
 /* ------------------------ Section 7 ------------------------ */
 
+
 /* ------------------------ Section 8 ------------------------ */
+
+
 /* Part 1 */
 
 .section8 .Latesta .redy {
@@ -236,6 +245,7 @@
     border-radius: 3px;
     display: inline-block;
 }
+
 .section8 .Latesta .redy p {
     padding: 10px;
     line-height: 10px;
@@ -243,14 +253,16 @@
 }
 
 .heading-block {
-	margin-bottom: 50px;
+    margin-bottom: 50px;
 }
+
 .Latesta {
     margin-bottom: 50px;
     margin-top: 50px;
     text-align: center !important;
 }
-.Latesta h3{
+
+.Latesta h3 {
     margin-top: 20px;
     margin-bottom: 0;
     font-weight: 700;
@@ -261,43 +273,54 @@
 
 
 /* Part 2 */
+
 .entry {
-    position:relative;
-    margin:0 0 50px
+    position: relative;
+    margin: 0 0 50px
 }
+
 .entry-image {
-    margin-bottom:30px
+    margin-bottom: 30px
 }
-.entry-image, .entry-image .slide a, .entry-image img, .entry-image>a {
-    display:block;
-    position:relative;
-    width:100%;
-    height:auto
+
+.entry-image,
+.entry-image .slide a,
+.entry-image img,
+.entry-image>a {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto
 }
+
 .entry-image img {
-    border-radius:3px
+    border-radius: 3px
 }
+
 .entry-title h3 {
-    margin:0;
-    font-size:24px;
-    font-weight:600;
-    text-transform:uppercase;
-    letter-spacing:1px;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     color: #333
 }
 
 .entry-meta {
-    margin:10px -10px -15px 0;
-    list-style:none
+    margin: 10px -10px -15px 0;
+    list-style: none
 }
 
+
 /* Part 3 */
+
 .contactus {
     text-align: center !important;
     background-image: url("../img/img12.jpg");
     padding: 200px;
 }
-.contactus h3{
+
+.contactus h3 {
     margin-top: 20px;
     margin-bottom: 0;
     font-weight: 700;
@@ -305,6 +328,7 @@
     letter-spacing: 1px;
     color: #333;
 }
+
 .contactus .btn-cl {
     background: orange;
     color: white;
@@ -312,8 +336,22 @@
     font-weight: bold;
     font-size: 0.8rem;
 }
+
+
 /* ------------------------ Section 9 ------------------------ */
 
+footer .bold {
+    font-weight: bold;
+}
+
+footer .ft-lg {
+    border-right: 1px solid #ccc;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 0px;
+    margin-bottom: 0;
+}
+
+
 /* ------------------------ Section 10 ------------------------ */
-
-
