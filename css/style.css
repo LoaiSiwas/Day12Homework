@@ -260,9 +260,6 @@
 
 
 /* ================= */
-.row {
-    margin: 200px;
-}
 .entry {
     position:relative;
     margin:0 0 50px
@@ -293,8 +290,27 @@
     list-style:none
 }
 
-/* ========== */
-
+/* Part 3 */
+.contactus {
+    text-align: center !important;
+    background-image: url("../img/img12.jpg");
+    padding: 200px;
+}
+.contactus h3{
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
+}
+.contactus .btn-cl {
+    background: orange;
+    color: white;
+    border-color: orange;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
 /* ------------------------ Section 9 ------------------------ */
 
 /* ------------------------ Section 10 ------------------------ */
