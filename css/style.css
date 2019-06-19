@@ -228,6 +228,73 @@
 
 /* ------------------------ Section 8 ------------------------ */
 
+.section8 .Latesta .redy {
+    color: orange;
+    border: 1px solid orange;
+    background: none;
+    border-radius: 3px;
+    display: inline-block;
+}
+.section8 .Latesta .redy p {
+    padding: 10px;
+    line-height: 10px;
+    margin-bottom: 0;
+}
+
+.heading-block {
+	margin-bottom: 50px;
+}
+.Latesta {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: center !important;
+}
+.Latesta h3{
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
+}
+
+
+/* ================= */
+.row {
+    margin: 200px;
+}
+.entry {
+    position:relative;
+    margin:0 0 50px
+}
+.entry-image {
+    margin-bottom:30px
+}
+.entry-image, .entry-image .slide a, .entry-image img, .entry-image>a {
+    display:block;
+    position:relative;
+    width:100%;
+    height:auto
+}
+.entry-image img {
+    border-radius:3px
+}
+.entry-title h3 {
+    margin:0;
+    font-size:24px;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    color: #333
+}
+
+.entry-meta {
+    margin:10px -10px -15px 0;
+    list-style:none
+}
+
+/* ========== */
+
 /* ------------------------ Section 9 ------------------------ */
 
 /* ------------------------ Section 10 ------------------------ */
