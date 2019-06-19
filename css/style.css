@@ -223,16 +223,167 @@
 
 /* ------------------------ Section 4 ------------------------ */
 
+<<<<<<< HEAD
 
 /* ------------------------ Section 5 ------------------------ */
+=======
+/* ------------------------ Section 5 done by Nour/Nour ------------------------ */
+.section5 {
+    background: url("../img/img11.jpg") no-repeat center center;
+    background-size: cover;
+    background-origin: border-box;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+    margin:0;
+}
+div.section5 .careers {
+    color: orange;
+    border: 1px solid orange;
+    background: none;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+div.section5 .careers p {
+    padding: 10px;
+    line-height: 10px;
+    margin-bottom: 0;
+}
+div.section5 h1 {
+    
+    font-size: 1.75em;
+    font-weight: 700;
+    padding: 10px 0;
+}
+div.section5 .form-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px gray;
+}
+div.section5 h3 {
+    font-size: 1.3em;
+    font-weight: 700;
+    padding: 10px 0;     
+}
+div.section5 label {
+    font-weight: 700;
+    font-size: 0.85em;
+}
+div.section5 .btn-primary {
+    background-color: orange !important;
+    border-color: orange !important;
+    font-weight: 700 !important;  
+}
+div.section5 i {
+    color:orange;
+}
+>>>>>>> f75a977745b686050180f7f0d645b33b93285a4f
 
 
 /* ------------------------ Section 6 ------------------------ */
 
+<<<<<<< HEAD
+=======
+.section6 {
+    background: url("../img/img12.jpg") no-repeat center center;
+    background-size: cover;
+    background-origin: border-box;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+    margin:0;
+}
+div.section6 .head{
+    text-align: center;
+    margin-bottom: 3%;
+}
+div.section6 .projects {
+    color: orange;
+    border: 1px solid orange;
+    background: none;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+div.section6 .projects p {
+    padding: 10px;
+    line-height: 10px;
+    margin-bottom: 0;
+}
+div.section6 h1 {
+    font-size: 1.75em;
+    font-weight: 700;
+    padding: 10px 0;
+}
+div.section6 h3 {
+    font-size: 1.50em;
+    font-weight: 700;
+    padding-top: 5px;
+}
+.section6 h4 {
+    font-size: 1em;
+    font-weight: 600;
+    color:grey;
+}
+.section6 .btn-primary {
+    background-color: orange !important;
+    border-color: orange !important;
+    font-weight: 700 !important; 
+    margin: 25px 0 25px 0;
+padding: 5px 15px 5px 15px;   
+}
+>>>>>>> f75a977745b686050180f7f0d645b33b93285a4f
 
 /* ------------------------ Section 7 ------------------------ */
+.section7 {
+    margin-top: 100px;
+}
+.section7 div {
+    text-align: center;
+}
+.section7 h3 {
+    margin: 25px 0 25px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+/* ------------------------ Section7-1 ------------------------ */
+.section7-1 {
+    background: url("../img/img12.jpg") no-repeat center center;
+    background-size: cover;
+    background-origin: border-box;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+    margin:0;
+}
+div.section7-1 .head{
+    text-align: center;
+    margin-bottom: 3%;
+}
+div.section7-1 .test {
+    color: orange;
+    border: 1px solid orange;
+    background: none;
+    border-radius: 3px;
+    display: inline-block;
+}
 
+<<<<<<< HEAD
 
+=======
+div.section7-1 .test p {
+    padding: 10px;
+    line-height: 10px;
+    margin-bottom: 0;
+}
+div.section7-1 h1 {
+    font-size: 1.75em;
+    font-weight: 700;
+    padding: 10px 0;
+}
+>>>>>>> f75a977745b686050180f7f0d645b33b93285a4f
 /* ------------------------ Section 8 ------------------------ */
 
 
@@ -352,6 +503,8 @@ footer .ft-lg {
     left: 0px;
     margin-bottom: 0;
 }
+
+/*<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">*/
 
 
 /* ------------------------ Section 10 ------------------------ */
