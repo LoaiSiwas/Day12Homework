@@ -219,7 +219,35 @@
 /* ------------------------ Section 3 ------------------------ */
 
 /* ------------------------ Section 4 ------------------------ */
+.section4 {
+    background: url("../img/priceTable.png") no-repeat center center;
+    background-size: cover;
+    background-origin: border-box;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+    margin:0;
+}
 
+.section4 .price {
+    color: orange;
+    border: 1px solid orange;
+    background: none;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.section4 .price p {
+    padding: 10px;
+    line-height: 10px;
+    margin-bottom: 0;
+}
+.section4 h1 {
+    
+    font-size: 1.75em;
+    font-weight: 700;
+    padding: 10px 0;
+}
 /* ------------------------ Section 5 done by Nour/Nour ------------------------ */
 .section5 {
     background: url("../img/img11.jpg") no-repeat center center;
@@ -230,7 +258,7 @@
     overflow: hidden;
     margin:0;
 }
-div.section5 .careers {
+.section5 .careers {
     color: orange;
     border: 1px solid orange;
     background: none;
@@ -238,42 +266,48 @@ div.section5 .careers {
     display: inline-block;
 }
 
-div.section5 .careers p {
+.section5 .careers p {
     padding: 10px;
     line-height: 10px;
     margin-bottom: 0;
 }
-div.section5 h1 {
+.section5 h1 {
     
     font-size: 1.75em;
     font-weight: 700;
     padding: 10px 0;
 }
-div.section5 .form-container {
+.section5 .form-container {
     background: #fff;
     padding: 30px;
     border-radius: 5px;
     box-shadow: 0px 0px 5px 0px gray;
 }
-div.section5 h3 {
+.section5 h3 {
     font-size: 1.3em;
     font-weight: 700;
     padding: 10px 0;     
 }
-div.section5 label {
+.section5 label {
     font-weight: 700;
     font-size: 0.85em;
 }
-div.section5 .btn-primary {
+.section5 .btn-primary {
     background-color: orange !important;
     border-color: orange !important;
     font-weight: 700 !important;  
 }
-div.section5 i {
+.section5 i {
     color:orange;
 }
 
-/* ------------------------ Section 6 ------------------------ */
+.section5 .container .playicon {
+    text-align: center;
+}
+/* ------------------------ Section 6 done by Nour /Nour ------------------------ */
+.section6 .container .btncenter {
+    text-align: center;
+}
 
 .section6 {
     background: url("../img/img12.jpg") no-repeat center center;
@@ -284,11 +318,11 @@ div.section5 i {
     overflow: hidden;
     margin:0;
 }
-div.section6 .head{
+.section6 .head{
     text-align: center;
     margin-bottom: 3%;
 }
-div.section6 .projects {
+.section6 .projects {
     color: orange;
     border: 1px solid orange;
     background: none;
@@ -296,17 +330,17 @@ div.section6 .projects {
     display: inline-block;
 }
 
-div.section6 .projects p {
+.section6 .projects p {
     padding: 10px;
     line-height: 10px;
     margin-bottom: 0;
 }
-div.section6 h1 {
+.section6 h1 {
     font-size: 1.75em;
     font-weight: 700;
     padding: 10px 0;
 }
-div.section6 h3 {
+.section6 h3 {
     font-size: 1.50em;
     font-weight: 700;
     padding-top: 5px;
@@ -324,7 +358,7 @@ div.section6 h3 {
 padding: 5px 15px 5px 15px;   
 }
 
-/* ------------------------ Section 7 ------------------------ */
+/* ------------------------ Section 7 done by Nour /Nour------------------------ */
 .section7 {
     margin-top: 100px;
 }
@@ -336,9 +370,9 @@ padding: 5px 15px 5px 15px;
     font-size: 20px;
     font-weight: 700;
 }
-/* ------------------------ Section7-1 ------------------------ */
+/* ------------------------ Section7-1 done by Nour /Nour ------------------------ */
 .section7-1 {
-    background: url("../img/img12.jpg") no-repeat center center;
+    background: url("../img/testimonials.jpg") no-repeat center center;
     background-size: cover;
     background-origin: border-box;
     padding: 100px 0;
@@ -346,11 +380,11 @@ padding: 5px 15px 5px 15px;
     overflow: hidden;
     margin:0;
 }
-div.section7-1 .head{
+.section7-1 .head{
     text-align: center;
     margin-bottom: 3%;
 }
-div.section7-1 .test {
+.section7-1 .test {
     color: orange;
     border: 1px solid orange;
     background: none;
@@ -358,12 +392,12 @@ div.section7-1 .test {
     display: inline-block;
 }
 
-div.section7-1 .test p {
+.section7-1 .test p {
     padding: 10px;
     line-height: 10px;
     margin-bottom: 0;
 }
-div.section7-1 h1 {
+.section7-1 h1 {
     font-size: 1.75em;
     font-weight: 700;
     padding: 10px 0;
