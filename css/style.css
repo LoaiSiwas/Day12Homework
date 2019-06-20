@@ -3,7 +3,19 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
-
+* h1 {
+    font-size: 1.75em;
+    font-weight: 700;
+    padding: 10px 0;
+}
+* h2 {
+    line-height: 50px;
+}
+* h4 {
+    font-size: 1em;
+    font-weight: 600;
+    color: grey;
+}
 
 /* ------------------------ Section 1 ------------------------ */
 
@@ -235,6 +247,128 @@
 
 
 /* ------------------------ Section 3 ------------------------ */
+
+.headservices {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.headservices .redy {
+    color: orange;
+    border: 1px solid orange;
+    background: none;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.headservices .redy p {
+    padding: 10px;
+    line-height: 10px;
+    margin-bottom: 0;
+    color: orange
+}
+
+.headservices p {
+    color: grey;
+}
+
+.left1 p {
+    font-family: 'Noto Sans HK', sans-serif;
+    color: grey;
+    font-size: 11px;
+}
+
+.left1 h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.left1 {
+    float: left;
+    width: 70%;
+    text-align: right;
+    padding-top: 5%;
+    font-size: 15px;
+    margin: 3rem 0;
+}
+
+.right1 {
+    float: right;
+    width: 30%;
+    margin: 3rem 0;
+}
+
+@media only screen and (max-width:992px) {
+    .left1 {
+        margin: 2rem 0;
+    }
+    .right1 {
+        margin: 2rem 0;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .left1 {
+        margin: 1rem 0;
+    }
+    .right1 {
+        margin: 1rem 0;
+    }
+}
+
+.right2 p {
+    font-family: 'Noto Sans HK', sans-serif;
+    color: grey;
+    font-size: 11px;
+}
+
+.right2 h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.right2 {
+    float: right;
+    width: 70%;
+    text-align: left;
+    padding-top: 5%;
+    font-size: 15px;
+    margin: 3rem 0;
+}
+
+.left2 {
+    float: left;
+    width: 30%;
+    margin: 3rem 0;
+}
+
+@media only screen and (max-width:992px) {
+    .left2 {
+        margin: 2rem 0;
+    }
+    .right2 {
+        margin: 2rem 0;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .left2 {
+        margin: 1rem 0;
+    }
+    .right2 {
+        margin: 1rem 0;
+    }
+}
+
+.imgu img {
+    max-width: 100%;
+}
+
+#col-2 {
+    margin-top: 175px;
+}
 
 
 /* ------------------------ Section 4 ------------------------ */
@@ -614,27 +748,37 @@
     display: block;
     position: relative;
     width: 100%;
-    height: auto
+    height: auto;
 }
 
 .entry-image img {
-    border-radius: 3px
+    border-radius: 3px;
 }
 
 .entry-title h3 {
     margin: 0;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #333
+    color: #333;
+}
+.trying {
+    margin-left: -45px !important;
+}
+.section8 .entry-meta {
+    
+    list-style: none;
+    color: gray;
+
 }
 
-.entry-meta {
-    margin: 10px -10px -15px 0;
-    list-style: none
-}
+.section8 .entry-meta .far{
+    
+    margin: 15px 0 20px 0;
+    padding: 5px;
 
+}
 
 /* Part 3 */
 
