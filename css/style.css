@@ -3,7 +3,19 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
-
+* h1 {
+    font-size: 1.75em;
+    font-weight: 700;
+    padding: 10px 0;
+}
+* h2 {
+    line-height: 50px;
+}
+* h4 {
+    font-size: 1em;
+    font-weight: 600;
+    color: grey;
+}
 
 /* ------------------------ Section 1 ------------------------ */
 
@@ -509,27 +521,35 @@
     display: block;
     position: relative;
     width: 100%;
-    height: auto
+    height: auto;
 }
 
 .entry-image img {
-    border-radius: 3px
+    border-radius: 3px;
 }
 
 .entry-title h3 {
     margin: 0;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #333
+    color: #333;
 }
 
-.entry-meta {
-    margin: 10px -10px -15px 0;
-    list-style: none
+.section8 .entry-meta {
+    
+    list-style: none;
+    color: gray;
+
 }
 
+.section8 .entry-meta .far{
+    
+    margin: 15px 0 20px 0;
+    padding: 5px;
+
+}
 
 /* Part 3 */
 
