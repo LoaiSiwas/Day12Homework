@@ -536,7 +536,9 @@
     letter-spacing: 1px;
     color: #333;
 }
-
+.trying {
+    margin-left: -45px !important;
+}
 .section8 .entry-meta {
     
     list-style: none;
