@@ -9,11 +9,16 @@
     <!-- link style sheet / loai -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!--  link JS files  -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
 </head>
 
 <!-- Add main page stracture / loai -->
@@ -122,246 +127,367 @@
     <div class="section2">
         <!-- loai and ammar will work on this / loai -->
         <!-- Logos added -->
-        <div class="logos d-flex flex-wrap justify-content-around">
-            <img src="img/logos/amazon.svg" alt="amazon">
-            <img src="img/logos/jetblue.svg" alt="jetblue">
-            <img src="img/logos/linkedin.svg" alt="linkedin">
-            <img src="img/logos/nat-geo.svg" alt="nat-geo">
-            <img src="img/logos/zillow.svg" alt="zillow">
+        <div class="">
+            <div class="row logos">
+                <div class="col-12 d-flex">
+                    <div class="owl-carousel owl-carousel1 owl-theme">
+                        <div class="item mx-3 py-1">
+                            <img src="img/logos/amazon.svg" alt="amazon">
+                        </div>
+                        <div class="item mx-3 py-1">
+                            <img src="img/logos/jetblue.svg" alt="jetblue">
+                        </div>
+                        <div class="item mx-3 py-1">
+                            <img src="img/logos/linkedin.svg" alt="linkedin">
+                        </div>
+                        <div class="item mx-3 py-1">
+                            <img src="img/logos/nat-geo.svg" alt="nat-geo">
+                        </div>
+                        <div class="item mx-3 py-1">
+                            <img src="img/logos/zillow.svg" alt="zillow">
+                        </div>
+                    </div>
+                    <script>
+                        $(document).ready(function() {
+                            var owl = $('.owl-carousel1');
+                            owl.owlCarousel({
+                                items: 5,
+                                loop: true,
+                                margin: 10,
+                                autoplay: true,
+                                autoplayTimeout: 3000,
+                                autoplayHoverPause: true
+                            });
+
+
+                        })
+                    </script>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="section3 container mb-4">
-        <!-- Ali will work on this / loai -->
-        <div class="headservices">
-            <span class="redy my-2">
+        <div class="section3 container mb-4">
+            <!-- Ali will work on this / loai -->
+            <div class="headservices">
+                <span class="redy my-2">
                 <p>Services</p>
             </span>
-            <h2 class="my-2"><strong>What We Do</strong></h2>
-            <p class="mb-5">Dynamically provide access to resource-leveling mindshare vis-a-<br> bricks-and-clicks ideas authoritatively.</p>
-        </div>
-        <div class="container row d-flex justify-content-md-center">
-            <div class="col-lg-4 col-sm-6">
-                <div id="servicesleft1">
-                    <div class="left1">
-                        <h3>SEO optimization</h3>
-                        <p>Lorem ipsum dolar sit amet, consectetur adipisicing elit,Illum,dolare,voluptates!</p>
+                <h2 class="my-2"><strong>What We Do</strong></h2>
+                <p class="mb-5">Dynamically provide access to resource-leveling mindshare vis-a-<br> bricks-and-clicks ideas authoritatively.</p>
+            </div>
+            <div class="container row d-flex justify-content-md-center">
+                <div class="col-lg-4 col-sm-6">
+                    <div id="servicesleft1">
+                        <div class="left1">
+                            <h3>SEO optimization</h3>
+                            <p>Lorem ipsum dolar sit amet, consectetur adipisicing elit,Illum,dolare,voluptates!</p>
+                        </div>
+                        <div class="right1">
+                            <img src="img/img2.svg" alt="">
+                        </div>
                     </div>
-                    <div class="right1">
-                        <img src="img/img2.svg" alt="">
+                    <div id="servicesleft2">
+                        <div class="left1">
+                            <h3>Adwords Camping</h3>
+                            <p>Lorem ipsum dolar sit amet, consectetur adipisicing elit,Illum,dolare,voluptates!</p>
+                        </div>
+                        <div class="right1">
+                            <img src="img/img3.svg" alt="">
+                        </div>
                     </div>
-                </div>
-                <div id="servicesleft2">
-                    <div class="left1">
-                        <h3>Adwords Camping</h3>
-                        <p>Lorem ipsum dolar sit amet, consectetur adipisicing elit,Illum,dolare,voluptates!</p>
+                    <div id="servicesleft3">
+                        <div class="left1">
+                            <h3>Digital Analysis</h3>
+                            <p>Lorem ipsum dolar sit amet, consectetur adipisicing elit,Illum,dolare,voluptates!</p>
+                        </div>
+                        <div class="right1">
+                            <img src="img/img4.svg" alt="">
+                        </div>
                     </div>
-                    <div class="right1">
-                        <img src="img/img3.svg" alt="">
-                    </div>
-                </div>
-                <div id="servicesleft3">
-                    <div class="left1">
-                        <h3>Digital Analysis</h3>
-                        <p>Lorem ipsum dolar sit amet, consectetur adipisicing elit,Illum,dolare,voluptates!</p>
-                    </div>
-                    <div class="right1">
-                        <img src="img/img4.svg" alt="">
-                    </div>
-                </div>
 
-            </div>
-            <div class="col-lg-4 d-flex d-sm-none d-lg-flex">
-                <div class="col-md-auto imgu">
-                    <img src="img/img8.png">
                 </div>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <div id="servicesleft1">
-                    <div class="right2">
-                        <h3>SEO optimization</h3>
-                        <p>Lorem ipsum dolar sit amet, consectetur adipisicing elit,Illum,dolare,voluptates!</p>
-                    </div>
-                    <div class="left2">
-                        <img src="img/img5.svg" alt="">
+                <div class="col-lg-4 d-flex d-sm-none d-lg-flex">
+                    <div class="col-md-auto imgu">
+                        <img src="img/img8.png">
                     </div>
                 </div>
-                <div id="servicesleft2">
-                    <div class="right2">
-                        <h3>Adwords Camping</h3>
-                        <p>Lorem ipsum dolar sit amet, consectetur adipisicing elit,Illum,dolare,voluptates!</p>
+                <div class="col-lg-4 col-sm-6">
+                    <div id="servicesleft1">
+                        <div class="right2">
+                            <h3>SEO optimization</h3>
+                            <p>Lorem ipsum dolar sit amet, consectetur adipisicing elit,Illum,dolare,voluptates!</p>
+                        </div>
+                        <div class="left2">
+                            <img src="img/img5.svg" alt="">
+                        </div>
                     </div>
-                    <div class="left2">
-                        <img src="img/img6.svg" alt="">
+                    <div id="servicesleft2">
+                        <div class="right2">
+                            <h3>Adwords Camping</h3>
+                            <p>Lorem ipsum dolar sit amet, consectetur adipisicing elit,Illum,dolare,voluptates!</p>
+                        </div>
+                        <div class="left2">
+                            <img src="img/img6.svg" alt="">
+                        </div>
                     </div>
-                </div>
-                <div id="servicesleft3">
-                    <div class="right2">
-                        <h3>Digital Analysis</h3>
-                        <p>Lorem ipsum dolar sit amet, consectetur adipisicing elit,Illum,dolare,voluptates!</p>
-                    </div>
-                    <div class="left2">
-                        <img src="img/img7.svg" alt="">
+                    <div id="servicesleft3">
+                        <div class="right2">
+                            <h3>Digital Analysis</h3>
+                            <p>Lorem ipsum dolar sit amet, consectetur adipisicing elit,Illum,dolare,voluptates!</p>
+                        </div>
+                        <div class="left2">
+                            <img src="img/img7.svg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="section4">
-        <!-- Ali will work on this / loai -->
-        <!--Nour is working on this / Nour-->
-        <div class="container">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-md-4">
-                    <span class="price"><p>Pricing Table</p>
+        <div class="section4">
+            <!-- Ali will work on this / loai -->
+            <!--Nour is working on this / Nour-->
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-md-4">
+                        <span class="price"><p>Pricing Table</p>
                     </span>
-                    <h1>No Hidden Charges. <br> Choose Your Best Plan. </h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolore voluptatem assumenda quae possimus sunt dignissimos tempora officia.</p>
-                </div>
-                <div class="col-md-8">
-                    hi
+                        <h1>No Hidden Charges. <br> Choose Your Best Plan. </h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolore voluptatem assumenda quae possimus sunt dignissimos tempora officia.</p>
+                    </div>
+                    <div class="col-md-8">
+                        hi
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="section5">
-        <!-- Nour will work on this / loai -->
-        <div class="container">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-md-4">
-                    <span class="careers"><p>Careers</p>
+        <div class="section5">
+            <!-- Nour will work on this / loai -->
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-md-4">
+                        <span class="careers"><p>Careers</p>
                     </span>
-                    <h1>Get your free Quote today </h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolore voluptatem assumenda quae possimus sunt dignissimos tempora officia.</p>
-                </div>
-                <div class="col-md-4">
-                    <form class="form-container">
-                        <h3>Apply Now</h3>
-                        <div class="form-group">
-                            <label for="name">NAME:*</label>
-                            <input type="name" class="form-control" id="name">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">EMAIL ADDRESS:*</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        </div>
-                        <div class="form-group">
-                            <label for="website">WEBSITE:*</label>
-                            <input type="website" class="form-control" id="website">
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block">Apply Now</button>
-                    </form>
-                </div>
-                <div class="col-md-4 playicon">
-                    <a href="#"><img src="img/img31.png" width="25%"></i>
-                    </a>
+                        <h1>Get your free Quote today </h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolore voluptatem assumenda quae possimus sunt dignissimos tempora officia.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <form class="form-container">
+                            <h3>Apply Now</h3>
+                            <div class="form-group">
+                                <label for="name">NAME:*</label>
+                                <input type="name" class="form-control" id="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">EMAIL ADDRESS:*</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <label for="website">WEBSITE:*</label>
+                                <input type="website" class="form-control" id="website">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Apply Now</button>
+                        </form>
+                    </div>
+                    <div class="col-md-4 playicon">
+                        <a href="#"><img src="img/img31.png" width="25%"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="section6">
-        <!-- Nour will work on this / loai -->
-        <div class="container">
-            <div class="head">
-                <span class="projects"><p>Completed Projects</p></span>
-                <h1>Our Latest Works</h1>
-            </div>
-            <div class="row mb-3">
-                <div class="col-md-4">
-                    <div class="card">
-                        <a href="#">
-                            <img src="img/img13.jpg" alt="img13" class="card-img-top"></a>
+        <div class="section6">
+            <!-- Nour will work on this / loai -->
+            <div class="container">
+                <div class="head">
+                    <span class="projects"><p>Completed Projects</p></span>
+                    <h1>Our Latest Works</h1>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="#">
+                                <img src="img/img13.jpg" alt="img13" class="card-img-top"></a>
+                        </div>
+                        <div>
+                            <h3>The Atmosphere</h3>
+                            <h4>Digital Marketing</h4>
+                        </div>
                     </div>
-                    <div>
-                        <h3>The Atmosphere</h3>
-                        <h4>Digital Marketing</h4>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="#">
+                                <img src="img/img14.jpg" alt="img14" class="card-img-top"></a>
+                        </div>
+                        <div>
+                            <h3>Wavelength Structure</h3>
+                            <h4>SEO</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="#">
+                                <img src="img/img15.jpg" alt="img15" class="card-img-top"></a>
+                        </div>
+                        <div>
+                            <h3>Simplicity Pages</h3>
+                            <h4>Analytics</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <a href="#">
-                            <img src="img/img14.jpg" alt="img14" class="card-img-top"></a>
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="#">
+                                <img src="img/img16.jpg" alt="img16" class="card-img-top"></a>
+                        </div>
+                        <div>
+                            <h3>SEO Analysis</h3>
+                            <h4>SEO</h4>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Wavelength Structure</h3>
-                        <h4>SEO</h4>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="#">
+                                <img src="img/img17.jpg" alt="img17" class="card-img-top"></a>
+                        </div>
+                        <div>
+                            <h3>Marketing Strategy</h3>
+                            <h4>Digital Marketing</h4>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <a href="#">
-                            <img src="img/img15.jpg" alt="img15" class="card-img-top"></a>
-                    </div>
-                    <div>
-                        <h3>Simplicity Pages</h3>
-                        <h4>Analytics</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="row mb-3">
-                <div class="col-md-4">
-                    <div class="card">
-                        <a href="#">
-                            <img src="img/img16.jpg" alt="img16" class="card-img-top"></a>
-                    </div>
-                    <div>
-                        <h3>SEO Analysis</h3>
-                        <h4>SEO</h4>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <a href="#">
-                            <img src="img/img17.jpg" alt="img17" class="card-img-top"></a>
-                    </div>
-                    <div>
-                        <h3>Marketing Strategy</h3>
-                        <h4>Digital Marketing</h4>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="#">
+                                <img src="img/img18.jpg" alt="img18" class="card-img-top"></a>
+                        </div>
+                        <div>
+                            <h3>Space Station</h3>
+                            <h4>Social Media</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <a href="#">
-                            <img src="img/img18.jpg" alt="img18" class="card-img-top"></a>
-                    </div>
-                    <div>
-                        <h3>Space Station</h3>
-                        <h4>Social Media</h4>
-                    </div>
+                <div class="btncenter">
+                    <button type="submit" class="btn btn-primary">View All Works</button>
                 </div>
-            </div>
-            <div class="btncenter">
-                <button type="submit" class="btn btn-primary">View All Works</button>
             </div>
         </div>
-    </div>
 
-    <div class="section7 container">
-        <!-- Nour will work on this / loai -->
-        <div class="row">
-            <div class="col-md-4">
-                <a href="#"><img src="img/img19.svg" width="100px"></a>
-                <h3>1. Planning & Research</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, dolore, voluptates!</p>
-            </div>
-            <div class="col-md-4">
-                <a href="#"><img src="img/img20.svg" width="100px"></a>
-                <h3>2. Optimizing</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, provident.</p>
-            </div>
-            <div class="col-md-4">
-                <a href="#"><img src="img/img21.svg" width="100px"></a>
-                <h3>3. Result</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, ipsa!</p>
+        <div class="section7 container">
+            <!-- Nour will work on this / loai -->
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#"><img src="img/img19.svg" width="100px"></a>
+                    <h3>1. Planning & Research</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, dolore, voluptates!</p>
+                </div>
+                <div class="col-md-4">
+                    <a href="#"><img src="img/img20.svg" width="100px"></a>
+                    <h3>2. Optimizing</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, provident.</p>
+                </div>
+                <div class="col-md-4">
+                    <a href="#"><img src="img/img21.svg" width="100px"></a>
+                    <h3>3. Result</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, ipsa!</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="section7-1">
-        <!--Nour is working on this section / Nour-->
-        <div class="container">
-            <div class="head">
-                <span class="test"><p>Testimonials</p></span>
-                <h1>What Clients Says</h1>
+        <div class="section7-1">
+            <!--Nour is working on this section / Nour-->
+            <div class="container">
+                <div class="head">
+                    <span class="test"><p>Testimonials</p></span>
+                    <h1>What Clients Says</h1>
+                </div>
+                <div class="row">
+                    <div class="col-12 carou justify-content-center">
+                        <div class="owl-carousel owl-theme">
 
+                            <div class="item card" style="width: 18rem;">
+                                <img src="img/img22.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="item card" style="width: 18rem;">
+                                <img src="img/img23.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="item card" style="width: 18rem;">
+                                <img src="img/img24.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="item card" style="width: 18rem;">
+                                <img src="img/img23.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="item card" style="width: 18rem;">
+                                <img src="img/img22.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="item card" style="width: 18rem;">
+                                <img src="img/img24.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+
+                            <div class="item card" style="width: 18rem;">
+                                <img src="img/img24.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="item card" style="width: 18rem;">
+                                <img src="img/img23.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="item card" style="width: 18rem;">
+                                <img src="img/img22.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <script>
+                            $(document).ready(function() {
+                                var owl = $('.owl-carousel');
+                                owl.owlCarousel({
+                                    items: 3,
+                                    loop: true,
+                                    margin: 10,
+                                    autoplay: true,
+                                    autoplayTimeout: 3000,
+                                    autoplayHoverPause: true
+                                });
+                            })
+                        </script>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -375,9 +501,9 @@
             </span>
             <h3>Recently From the Blog</h3>
         </div>
-    
+
         <!-- Part 2 / loai -->
-        
+
         <div class="row mt-5 clearfix mx-5 px-2 mt-2">
             <div class="col-md-4">
                 <article class="entry">
@@ -529,9 +655,7 @@
                             </div>
                             <div class="d-flex col-lg-6 col-md-12 col-6 clearfix">
                                 <a href="#"><i class="fas fa-rss-square iconcon"></i></a>
-                                <a href="#">
-                                    <span class="tex text-decoration-none text-black-50"><strong>Subscribe</strong><br>to RSS Feeds</span>
-                                </a>
+                                <a href="#"> <span class="tex text-decoration-none text-black-50"><strong>Subscribe</strong><br>to RSS Feeds</span></a>
                             </div>
                         </div>
                     </div>

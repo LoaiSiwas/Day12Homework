@@ -3,19 +3,23 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
+
 * h1 {
     font-size: 1.75em;
     font-weight: 700;
     padding: 10px 0;
 }
+
 * h2 {
     line-height: 50px;
 }
+
 * h4 {
     font-size: 1em;
     font-weight: 600;
     color: grey;
 }
+
 
 /* ------------------------ Section 1 ------------------------ */
 
@@ -585,6 +589,14 @@
     padding: 10px 0;
 }
 
+.carou .card {
+    border: none;
+}
+
+.carou img {
+    border-radius: 50%;
+}
+
 
 /* ------------------------ Section 8 ------------------------ */
 
@@ -660,18 +672,15 @@
 }
 
 .section8 .entry-meta {
-    
     list-style: none;
     color: gray;
-
 }
 
-.section8 .entry-meta .far{
-    
+.section8 .entry-meta .far {
     margin: 15px 0 20px 0;
     padding: 5px;
-
 }
+
 
 /* Part 3 */
 
