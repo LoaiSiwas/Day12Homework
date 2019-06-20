@@ -261,13 +261,112 @@
     padding: 10px;
     line-height: 10px;
     margin-bottom: 0;
+
 }
 
-.section4 h1 {
-    font-size: 1.75em;
+.section4 h2 {
+    font-size: 1.50em;
     font-weight: 700;
     padding: 10px 0;
+    margin: 10px 0 20px 0 ;
 }
+.card-title h4 {
+    font-weight: 700;
+    font-size: 1.2em;
+    color:rgb(92, 87, 87);
+    margin: 10px 0 10px 0;
+}
+.section4 .price5{
+    font-weight: 600;
+    font-size: 4em;
+
+}
+.section4 .price5 p .dollar{
+    font-size: 0.4em;
+    font-weight: 300;
+    vertical-align: top;
+}
+
+.section4 .list-group-item {
+    border: none;
+}
+.section4 .fa-check-circle{
+    color:orange;
+}
+
+.section4 .btn-cl {
+    background:orange ;
+    color: white;
+    border-color: orange;
+    font-weight: 600;
+    font-size: 1em;
+}
+    
+.section4 .btn-gr {
+    background: none;
+    color: rgb(92, 87, 87);
+    border-color: #ccc;
+    font-weight: 600;
+    font-size: 1em;
+}
+    
+.section4 .btn-cl:hover {
+    position: relative;
+    top: -3px;
+}
+    
+.section4 .btn-gr:hover {
+    position: relative;
+    top: -3px;
+}
+/* The switch - the box around the slider */
+.section4 .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+   
+  }
+  
+  /* Hide default HTML checkbox */
+.section4 .switch input {display:none;}
+  
+  /* The slider */
+.section4 .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+.section4 .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+.section4 input.warning:checked + .slider {
+    background-color: #FFC107;
+  }
+.section4 input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+.section4 input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
 
 
 /* ------------------------ Section 5 done by Nour/Nour ------------------------ */
@@ -277,9 +376,12 @@
     background-size: cover;
     background-origin: border-box;
     padding: 100px 0;
-    position: relative;
+    position: center;
     overflow: hidden;
     margin: 0;
+}
+@media only screen and (max-width: 768px) {
+    
 }
 
 .section5 .careers {
@@ -296,10 +398,11 @@
     margin-bottom: 0;
 }
 
-.section5 h1 {
-    font-size: 1.75em;
+.section5 h2 {
+    font-size: 1.50em;
     font-weight: 700;
     padding: 10px 0;
+    margin: 10px 0 20px 0 ;
 }
 
 .section5 .form-container {
@@ -353,7 +456,7 @@
 
 .section6 .head {
     text-align: center;
-    margin-bottom: 3%;
+    margin-bottom: 4%;
 }
 
 .section6 .projects {
@@ -370,10 +473,11 @@
     margin-bottom: 0;
 }
 
-.section6 h1 {
-    font-size: 1.75em;
+.section6 h2 {
+    font-size: 1.50em;
     font-weight: 700;
     padding: 10px 0;
+    margin: 10px 0 20px 0 ;
 }
 
 .section6 h3 {
@@ -445,10 +549,11 @@
     margin-bottom: 0;
 }
 
-.section7-1 h1 {
-    font-size: 1.75em;
+.section7-1 h2 {
+    font-size: 1.50em;
     font-weight: 700;
     padding: 10px 0;
+    margin: 10px 0 20px 0 ;
 }
 
 
