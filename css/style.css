@@ -1,5 +1,9 @@
 /* ------------------------ Global ------------------------ */
 
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
 
 /* ------------------------ Section 1 ------------------------ */
 
@@ -91,16 +95,38 @@
 
 .section1 {
     background-image: url("../img/img1.jpg");
-    background-size: 100%;
-    height: 750px;
-    background-origin: border-box;
-    background-repeat: no-repeat;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    height: 700px;
+    transform: translateY(0px);
+    background-position: center center;
+    background-repeat: no-repeat no-repeat;
 }
 
-.slogen {
-    width: 45%;
-    float: left;
+@media only screen and (max-width:992px) {
+    .section1 {
+        height: 500px;
+    }
+    .section1::after {
+        content: "";
+        background-image: url("../img/img1.jpg");
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
 }
+
+@media only screen and (max-width:760px) {
+    .section1 {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width:592px) {}
 
 .slogen .redy {
     color: orange;
@@ -118,12 +144,12 @@
 
 .slogen .improve {
     font-size: 3.5em;
-    font-family: Helvetica, sans-serif;
-    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
 
 .slogen .bst {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     color: #ccc;
     font-size: 1.4rem;
@@ -139,15 +165,10 @@
 }
 
 @media only screen and (max-width:992px) {
-    .slogen {
-        width: 70%;
-        margin-left: 0;
-    }
     .slogen .improve {
         font-size: 2rem;
     }
     .slogen .bst {
-        font-family: Arial, Helvetica, sans-serif;
         font-weight: 600;
         color: black;
         font-size: 1rem;
@@ -159,16 +180,11 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .slogen {
-        width: 100%;
-        margin-left: 0;
-    }
     .slogen .improve {
         font-size: 1.5rem;
         margin: 0;
     }
     .slogen .bst {
-        font-family: Arial, Helvetica, sans-serif;
         font-weight: 600;
         color: black;
         font-size: 0.7rem;
@@ -223,11 +239,9 @@
 
 /* ------------------------ Section 4 ------------------------ */
 
-<<<<<<< HEAD
 
-/* ------------------------ Section 5 ------------------------ */
-=======
 /* ------------------------ Section 5 done by Nour/Nour ------------------------ */
+
 .section5 {
     background: url("../img/img11.jpg") no-repeat center center;
     background-size: cover;
@@ -235,8 +249,9 @@
     padding: 100px 0;
     position: relative;
     overflow: hidden;
-    margin:0;
+    margin: 0;
 }
+
 div.section5 .careers {
     color: orange;
     border: 1px solid orange;
@@ -250,42 +265,44 @@ div.section5 .careers p {
     line-height: 10px;
     margin-bottom: 0;
 }
+
 div.section5 h1 {
-    
     font-size: 1.75em;
     font-weight: 700;
     padding: 10px 0;
 }
+
 div.section5 .form-container {
     background: #fff;
     padding: 30px;
     border-radius: 5px;
     box-shadow: 0px 0px 5px 0px gray;
 }
+
 div.section5 h3 {
     font-size: 1.3em;
     font-weight: 700;
-    padding: 10px 0;     
+    padding: 10px 0;
 }
+
 div.section5 label {
     font-weight: 700;
     font-size: 0.85em;
 }
+
 div.section5 .btn-primary {
     background-color: orange !important;
     border-color: orange !important;
-    font-weight: 700 !important;  
+    font-weight: 700 !important;
 }
+
 div.section5 i {
-    color:orange;
+    color: orange;
 }
->>>>>>> f75a977745b686050180f7f0d645b33b93285a4f
 
 
 /* ------------------------ Section 6 ------------------------ */
 
-<<<<<<< HEAD
-=======
 .section6 {
     background: url("../img/img12.jpg") no-repeat center center;
     background-size: cover;
@@ -293,12 +310,14 @@ div.section5 i {
     padding: 100px 0;
     position: relative;
     overflow: hidden;
-    margin:0;
+    margin: 0;
 }
-div.section6 .head{
+
+div.section6 .head {
     text-align: center;
     margin-bottom: 3%;
 }
+
 div.section6 .projects {
     color: orange;
     border: 1px solid orange;
@@ -312,43 +331,53 @@ div.section6 .projects p {
     line-height: 10px;
     margin-bottom: 0;
 }
+
 div.section6 h1 {
     font-size: 1.75em;
     font-weight: 700;
     padding: 10px 0;
 }
+
 div.section6 h3 {
     font-size: 1.50em;
     font-weight: 700;
     padding-top: 5px;
 }
+
 .section6 h4 {
     font-size: 1em;
     font-weight: 600;
-    color:grey;
+    color: grey;
 }
+
 .section6 .btn-primary {
     background-color: orange !important;
     border-color: orange !important;
-    font-weight: 700 !important; 
+    font-weight: 700 !important;
     margin: 25px 0 25px 0;
-padding: 5px 15px 5px 15px;   
+    padding: 5px 15px 5px 15px;
 }
->>>>>>> f75a977745b686050180f7f0d645b33b93285a4f
+
 
 /* ------------------------ Section 7 ------------------------ */
+
 .section7 {
     margin-top: 100px;
 }
+
 .section7 div {
     text-align: center;
 }
+
 .section7 h3 {
     margin: 25px 0 25px 0;
     font-size: 20px;
     font-weight: 700;
 }
+
+
 /* ------------------------ Section7-1 ------------------------ */
+
 .section7-1 {
     background: url("../img/img12.jpg") no-repeat center center;
     background-size: cover;
@@ -356,12 +385,14 @@ padding: 5px 15px 5px 15px;
     padding: 100px 0;
     position: relative;
     overflow: hidden;
-    margin:0;
+    margin: 0;
 }
-div.section7-1 .head{
+
+div.section7-1 .head {
     text-align: center;
     margin-bottom: 3%;
 }
+
 div.section7-1 .test {
     color: orange;
     border: 1px solid orange;
@@ -370,20 +401,19 @@ div.section7-1 .test {
     display: inline-block;
 }
 
-<<<<<<< HEAD
-
-=======
 div.section7-1 .test p {
     padding: 10px;
     line-height: 10px;
     margin-bottom: 0;
 }
+
 div.section7-1 h1 {
     font-size: 1.75em;
     font-weight: 700;
     padding: 10px 0;
 }
->>>>>>> f75a977745b686050180f7f0d645b33b93285a4f
+
+
 /* ------------------------ Section 8 ------------------------ */
 
 
@@ -491,18 +521,94 @@ div.section7-1 h1 {
 
 /* ------------------------ Section 9 ------------------------ */
 
-footer .bold {
-    font-weight: bold;
+footer .br {
+    border-bottom: #ddd 1px solid;
 }
 
 footer .ft-lg {
-    border-right: 1px solid #ccc;
-    position: absolute;
-    top: 10px;
-    bottom: 10px;
-    left: 0px;
-    margin-bottom: 0;
+    border-right: 1px solid #ddd;
+    float: left;
+    min-width: 150px;
 }
+
+footer .ft-lg h2 {
+    line-height: 50px;
+}
+
+footer hr {
+    color: #ddd;
+}
+
+footer {
+    font-weight: 300;
+    font-size: 13px;
+}
+
+footer strong {
+    font-weight: bold;
+}
+
+footer .sad {
+    width: 100%;
+}
+
+footer .siz h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+footer .icoon {
+    line-height: 62px;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    top: 0;
+    left: 0;
+    font-size: 2rem;
+    line-height: 64px;
+}
+
+footer .icoon2 {
+    line-height: 62px;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    top: 0;
+    left: 0;
+    font-size: 2rem;
+    line-height: 64px;
+    margin-top: 55px;
+}
+
+footer .btn-cl {
+    background: orange;
+    color: white;
+    border-color: orange;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+footer .btn-cl:hover {
+    background: darkgray;
+    border-color: darkgray;
+    color: white;
+    position: relative;
+}
+
+footer .iconcon {
+    margin: 0 5px 5px 0;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    line-height: 38px;
+}
+
+footer span.tex {
+    font-size: 0.6rem;
+}
+
 
 /*<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">*/
 
