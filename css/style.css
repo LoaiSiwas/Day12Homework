@@ -854,7 +854,7 @@
 .contactus {
     text-align: center !important;
     background-image: url("../img/img12.jpg");
-    padding: 200px;
+    padding: 200px 40px;
 }
 
 .contactus h3 {
@@ -864,6 +864,21 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #333;
+}
+
+.contactus h5 {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #333;
+}
+
+@media only screen and (max-width: 768px) {
+    .contactus h3 {
+        size: 1rem;
+    }
+    .contactus h5 {
+        size: 1rem;
+    }
 }
 
 .contactus .btn-cl {
