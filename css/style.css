@@ -796,9 +796,9 @@
         margin: 0 auto;
     }
     
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 992px) {
         .carou .item.card {
-            width: 80%;
+            width: 14rem;
         }
     }
     
