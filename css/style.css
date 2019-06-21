@@ -1,1024 +1,1057 @@
-/* ------------------------ Global ------------------------ */
-
-* {
-    font-family: 'Poppins', sans-serif;
-}
-
-* h1 {
-    font-size: 1.75em;
-    font-weight: 700;
-    padding: 10px 0;
-}
-
-* h2 {
-    line-height: 50px;
-}
-
-* h4 {
-    font-size: 1em;
-    font-weight: 600;
-    color: grey;
-}
-
-
-/* ------------------------ Section 1 ------------------------ */
-
-.socialbar .nav-link {
-    color: gray;
-    font-weight: bold;
-    font-size: 0.8rem;
-}
-
-.socialbar .nav-link:hover {
-    background: #ccc;
-}
-
-.socialbar .nav-link img {
-    width: 1rem;
-}
-
-.socialbar .dropdown-item img {
-    width: 1rem;
-}
-
-.navbar {
-    float: none;
-    width: 100%;
-}
-
-.navbar-nav .show>.nav-link,
-.navbar-light .navbar-nav .active>.nav-link,
-.navbar-light .navbar-nav .nav-link.show,
-.navbar-nav .nav-link.active {
-    color: orange;
-}
-
-.navbar .btn-cl {
-    background: orange;
-    color: white;
-    border-color: orange;
-    font-weight: bold;
-    font-size: 0.8rem;
-}
-
-.navbar .btn-cl:hover {
-    background: darkgray;
-    border-color: darkgray;
-    position: relative;
-    top: -3px;
-}
-
-.navbar {
-    font-weight: bold;
-    font-size: 0.8rem;
-}
-
-.hide {
-    opacity: 0;
-    max-height: 0;
-}
-
-#trigger {
-    position: absolute;
-    left: -999em;
-}
-
-#container input[type="checkbox"]:checked+div {
-    max-height: 99em;
-    opacity: 1;
-    height: auto;
-    overflow: hidden;
-}
-
-.section1 {
-    background-image: url("../img/img1.jpg");
-    background-color: rgb(255, 255, 255);
-    background-size: cover;
-    height: 700px;
-    transform: translateY(0px);
-    background-position: center;
-    background-repeat: no-repeat no-repeat;
-}
-
-@media only screen and (max-width:992px) {
-    .section1 {
-        height: 500px;
+    /* ------------------------ Global ------------------------ */
+    
+    * {
+        font-family: 'Poppins', sans-serif;
     }
-    .section1::after {
-        content: "";
-        background-image: url("../img/img1.jpg");
-        opacity: 0.5;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        position: absolute;
-        z-index: -1;
+    
+    * h1 {
+        font-size: 1.75em;
+        font-weight: 700;
+        padding: 10px 0;
     }
-}
-
-@media only screen and (max-width:760px) {
-    .section1 {
-        height: 400px;
+    
+    * h2 {
+        line-height: 50px;
     }
-}
-
-@media only screen and (max-width:592px) {}
-
-.slogen .redy {
-    color: orange;
-    border: 1px solid orange;
-    background: none;
-    border-radius: 3px;
-    display: inline-block;
-}
-
-.slogen .redy p {
-    padding: 10px;
-    line-height: 10px;
-    margin-bottom: 0;
-}
-
-.slogen .improve {
-    font-size: 3.5em;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-}
-
-.slogen .bst {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    color: #ccc;
-    font-size: 1.4rem;
-}
-
-.slogen .pcl {
-    color: orange;
-}
-
-.slogen .lor {
-    font-size: 1.5rem;
-    color: gray;
-}
-
-@media only screen and (max-width:992px) {
-    .slogen .improve {
-        font-size: 2rem;
-    }
-    .slogen .bst {
+    
+    * h4 {
+        font-size: 1em;
         font-weight: 600;
-        color: black;
-        font-size: 1rem;
+        color: grey;
     }
-    .slogen .lor {
-        font-size: 1rem;
-        color: black;
+    /* ------------------------ Section 1 ------------------------ */
+    
+    .socialbar .nav-link {
+        color: gray;
+        font-weight: bold;
+        font-size: 0.8rem;
     }
-}
-
-@media only screen and (max-width: 768px) {
-    .slogen .improve {
-        font-size: 1.5rem;
-        margin: 0;
+    
+    .socialbar .nav-link:hover {
+        background: #ccc;
     }
-    .slogen .bst {
-        font-weight: 600;
-        color: black;
-        font-size: 0.7rem;
+    
+    .socialbar .nav-link img {
+        width: 1rem;
     }
-    .slogen .lor {
-        font-size: 0.7rem;
-        color: black;
+    
+    .socialbar .dropdown-item img {
+        width: 1rem;
     }
-}
-
-.slogen .btn-cl {
-    background: orange;
-    color: white;
-    border-color: orange;
-    font-weight: bold;
-    font-size: 0.8rem;
-}
-
-.slogen .btn-gr {
-    background: none;
-    color: black;
-    border-color: #ccc;
-    font-weight: 400;
-    font-size: 0.8rem;
-}
-
-.slogen .btn-cl:hover {
-    background: darkgray;
-    border-color: darkgray;
-    color: white;
-    position: relative;
-    top: -3px;
-}
-
-.slogen .btn-gr:hover {
-    background: white;
-    color: black;
-    position: relative;
-    top: -3px;
-}
-
-
-/* ------------------------ Section 2 ------------------------ */
-
-.logos {
-    height: 200px;
-    background: white;
-    border-bottom: 1px #eee solid;
-}
-
-.logos .item {
-    width: 7rem;
-    margin-top: 80px;
-}
-
-@media only screen and (max-width: 768px) {
-    .logos {
-        height: 150px;
-    }
-    .logos .item {
-        width: 5rem;
-        margin-top: 55px;
-    }
-}
-
-@media only screen and (max-width:592px) {
-    .logos {
-        height: 100px;
-    }
-    .logos .item {
-        width: 4rem;
-        margin-top: 40px;
-    }
-}
-
-
-/* ------------------------ Section 3 ------------------------ */
-
-.headservices {
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.headservices .redy {
-    color: orange;
-    border: 1px solid orange;
-    background: none;
-    border-radius: 3px;
-    display: inline-block;
-}
-
-.headservices .redy p {
-    padding: 10px;
-    line-height: 10px;
-    margin-bottom: 0;
-    color: orange
-}
-
-.headservices p {
-    color: grey;
-}
-
-.left1 p {
-    font-family: 'Noto Sans HK', sans-serif;
-    color: grey;
-    font-size: 11px;
-}
-
-.left1 h3 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.left1 {
-    float: left;
-    width: 70%;
-    text-align: right;
-    padding-top: 5%;
-    font-size: 15px;
-    margin: 3rem 0;
-}
-
-.right1 {
-    float: right;
-    width: 30%;
-    margin: 3rem 0;
-}
-
-@media only screen and (max-width:992px) {
-    .left1 {
-        margin: 2rem 0;
-    }
-    .right1 {
-        margin: 2rem 0;
-    }
-}
-
-@media only screen and (max-width:768px) {
-    .left1 {
-        margin: 1rem 0;
-    }
-    .right1 {
-        margin: 1rem 0;
-    }
-}
-
-.right2 p {
-    font-family: 'Noto Sans HK', sans-serif;
-    color: grey;
-    font-size: 11px;
-}
-
-.right2 h3 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.right2 {
-    float: right;
-    width: 70%;
-    text-align: left;
-    padding-top: 5%;
-    font-size: 15px;
-    margin: 3rem 0;
-}
-
-.left2 {
-    float: left;
-    width: 30%;
-    margin: 3rem 0;
-}
-
-@media only screen and (max-width:992px) {
-    .left2 {
-        margin: 2rem 0;
-    }
-    .right2 {
-        margin: 2rem 0;
-    }
-}
-
-@media only screen and (max-width:768px) {
-    .left2 {
-        margin: 1rem 0;
-    }
-    .right2 {
-        margin: 1rem 0;
-    }
-}
-
-.imgu img {
-    max-width: 100%;
-}
-
-#col-2 {
-    margin-top: 175px;
-}
-
-
-/* ------------------------ Section 4 done by Nour / Nour------------------------ */
-
-.section4 {
-    background: url("../img/priceTable.png") no-repeat center center;
-    background-size: cover;
-    background-origin: border-box;
-    padding: 100px 0;
-    position: relative;
-    overflow: hidden;
-    margin: 0;
-}
-
-.section4 .price {
-    color: orange;
-    border: 1px solid orange;
-    background: none;
-    border-radius: 3px;
-    display: inline-block;
-}
-
-.section4 .price p {
-    padding: 10px;
-    line-height: 10px;
-    margin-bottom: 0;
-}
-
-.section4 h2 {
-    font-size: 1.50em;
-    font-weight: 700;
-    padding: 10px 0;
-    margin: 10px 0 20px 0;
-}
-
-.card-title h4 {
-    font-weight: 700;
-    font-size: 1.2em;
-    color: rgb(92, 87, 87);
-    margin: 10px 0 10px 0;
-}
-
-.section4 .price5 {
-    font-weight: 600;
-    font-size: 4em;
-}
-
-.section4 .price5 p .dollar {
-    font-size: 0.4em;
-    font-weight: 300;
-    vertical-align: top;
-}
-
-.section4 .list-group-item {
-    border: none;
-}
-
-.section4 .fa-check-circle {
-    color: orange;
-}
-
-.section4 .fa-minus-circle {
-    color: grey;
-}
-
-.section4 .minus-item {
-    color: rgb(192, 185, 185);
-}
-
-.section4 .btn-cl {
-    background: orange;
-    color: white;
-    border-color: orange;
-    font-weight: 600;
-    font-size: 1em;
-}
-
-.section4 .btn-gr {
-    background: none;
-    color: rgb(92, 87, 87);
-    border-color: #ccc;
-    font-weight: 600;
-    font-size: 1em;
-}
-
-.section4 .btn-cl:hover {
-    position: relative;
-    top: -3px;
-}
-
-.section4 .btn-gr:hover {
-    position: relative;
-    top: -3px;
-}
-
-
-/* The switch - the box around the slider */
-
-.section4 .switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-}
-
-
-/* Hide default HTML checkbox */
-
-.section4 .switch input {
-    display: none;
-}
-
-
-/* The slider */
-
-.section4 .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-.section4 .slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-.section4 input.warning:checked+.slider {
-    background-color: #FFC107;
-}
-
-.section4 input:focus+.slider {
-    box-shadow: 0 0 1px #2196F3;
-}
-
-.section4 input:checked+.slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-}
-
-
-/* ------------------------ Section 5 done by Nour/Nour ------------------------ */
-
-.section5 {
-    background: url("../img/img11.jpg") no-repeat center center;
-    background-size: cover;
-    background-origin: border-box;
-    padding: 100px 0;
-    position: center;
-    overflow: hidden;
-    margin: 0;
-}
-
-.section5 .careers {
-    color: orange;
-    border: 1px solid orange;
-    background: none;
-    border-radius: 3px;
-    display: inline-block;
-}
-
-.section5 .careers p {
-    padding: 10px;
-    line-height: 10px;
-    margin-bottom: 0;
-}
-
-.section5 h2 {
-    font-size: 1.50em;
-    font-weight: 700;
-    padding: 10px 0;
-    margin: 10px 0 20px 0;
-}
-
-.section5 .form-container {
-    background: #fff;
-    padding: 30px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px 0px gray;
-}
-
-.section5 h3 {
-    font-size: 1.3em;
-    font-weight: 700;
-    padding: 10px 0;
-}
-
-.section5 label {
-    font-weight: 700;
-    font-size: 0.85em;
-}
-
-.section5 .btn-primary {
-    background-color: orange !important;
-    border-color: orange !important;
-    font-weight: 700 !important;
-}
-
-.section5 .btn-primary:hover {
-    position: relative;
-    top: -3px;
-}
-
-.section5 .container .playicon {
-    text-align: center;
-}
-
-.section5 .playicon:hover {
-    position: relative;
-    top: -3px;
-}
-
-.modal-content {
-    background: transparent !important;
-    border: none !important;
-}
-
-
-/* ------------------------ Section 6 done by Nour /Nour ------------------------ */
-
-.section6 {
-    background: url("../img/img12.jpg") no-repeat center center;
-    background-size: cover;
-    background-origin: border-box;
-    padding: 100px 0;
-    position: relative;
-    overflow: hidden;
-    margin: 0;
-}
-
-.section6 .head {
-    text-align: center;
-    margin-bottom: 4%;
-}
-
-.section6 .projects {
-    color: orange;
-    border: 1px solid orange;
-    background: none;
-    border-radius: 3px;
-    display: inline-block;
-}
-
-.section6 .projects p {
-    padding: 10px;
-    line-height: 10px;
-    margin-bottom: 0;
-}
-
-.section6 h2 {
-    font-size: 1.50em;
-    font-weight: 700;
-    padding: 10px 0;
-    margin: 10px 0 20px 0;
-}
-
-.section6 h4 {
-    font-size: 1.2em;
-    font-weight: 600;
-    color: rgb(32, 32, 32);
-    margin-top: 10px;
-}
-
-.section6 img:hover {
-    opacity: 0.5;
-    filter: alpha(opacity=50);
-}
-
-.section6 .container .btncenter {
-    text-align: center;
-}
-
-.section6 .btn-primary {
-    background-color: orange !important;
-    border-color: orange !important;
-    font-weight: 700 !important;
-    margin: 25px 0 25px 0;
-    padding: 5px 15px 5px 15px;
-}
-
-.section6 .btn-primary:hover {
-    position: relative;
-    top: -3px;
-}
-
-
-/* ------------------------ Section 7 done by Nour /Nour------------------------ */
-
-.section7 {
-    margin-top: 100px;
-}
-
-.section7 div {
-    text-align: center;
-}
-
-.section7 h3 {
-    margin: 25px 0 25px 0;
-    font-size: 1em;
-    font-weight: 700;
-}
-
-.section7 p {
-    color: rgb(109, 105, 105);
-}
-
-
-/* ------------------------ Section7-1 done by Nour and Ammar /Nour ------------------------ */
-
-.section7-1 {
-    background: url("../img/testimonials.jpg") no-repeat center center;
-    background-size: cover;
-    background-origin: border-box;
-    padding: 100px 0;
-    position: relative;
-    overflow: hidden;
-    margin: 0;
-}
-
-.section7-1 .head {
-    text-align: center;
-    margin-bottom: 3%;
-}
-
-.section7-1 .test {
-    color: orange;
-    border: 1px solid orange;
-    background: none;
-    border-radius: 3px;
-    display: inline-block;
-}
-
-.section7-1 .test p {
-    padding: 10px;
-    line-height: 10px;
-    margin-bottom: 0;
-}
-
-.section7-1 h2 {
-    font-size: 1.50em;
-    font-weight: 700;
-    padding: 10px 0;
-    margin: 10px 0 20px 0;
-}
-
-.carou .item.card {
-    border: none;
-    width: 18rem;
-}
-
-.carou .item.card img {
-    width: 30%;
-    margin: 0 auto;
-}
-
-@media only screen and (max-width: 1200px) {
-    .carou .item.card {
-        width: 80%;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .carou .item.card {
+    
+    .navbar {
+        float: none;
         width: 100%;
     }
-}
-
-.carou img {
-    border-radius: 50%;
-}
-
-
-/* ------------------------ Section 8 ------------------------ */
-
-
-/* Part 1 */
-
-.section8 .Latesta .redy {
-    color: orange;
-    border: 1px solid orange;
-    background: none;
-    border-radius: 3px;
-    display: inline-block;
-}
-
-.section8 .Latesta .redy p {
-    padding: 10px;
-    line-height: 10px;
-    margin-bottom: 0;
-}
-
-.heading-block {
-    margin-bottom: 50px;
-}
-
-.Latesta {
-    margin-bottom: 50px;
-    margin-top: 50px;
-    text-align: center !important;
-}
-
-.Latesta h3 {
-    margin-top: 20px;
-    margin-bottom: 0;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #333;
-}
-
-
-/* Part 2 */
-
-.entry {
-    position: relative;
-    margin: 0 0 50px
-}
-
-.entry-image {
-    margin-bottom: 30px
-}
-
-.entry-image,
-.entry-image .slide a,
-.entry-image img,
-.entry-image>a {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: auto;
-}
-
-.entry-image img {
-    border-radius: 3px;
-}
-
-.entry-title h3 {
-    margin: 0;
-    font-size: 16px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #333;
-}
-
-.trying {
-    margin-left: -45px !important;
-}
-
-.section8 .entry-meta {
-    list-style: none;
-    color: gray;
-}
-
-.section8 .entry-meta .far {
-    margin: 15px 0 20px 0;
-    padding: 5px;
-}
-
-
-/* Part 3 */
-
-.contactus {
-    text-align: center !important;
-    background-image: url("../img/img12.jpg");
-    padding: 200px 40px;
-}
-
-.contactus h3 {
-    margin-top: 20px;
-    margin-bottom: 0;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #333;
-}
-
-.contactus h5 {
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #333;
-}
-
-@media only screen and (max-width: 768px) {
+    
+    .navbar-nav .show>.nav-link,
+    .navbar-light .navbar-nav .active>.nav-link,
+    .navbar-light .navbar-nav .nav-link.show,
+    .navbar-nav .nav-link.active {
+        color: orange;
+    }
+    
+    .navbar .btn-cl {
+        background: orange;
+        color: white;
+        border-color: orange;
+        font-weight: bold;
+        font-size: 0.8rem;
+    }
+    
+    .navbar .btn-cl:hover {
+        background: darkgray;
+        border-color: darkgray;
+        position: relative;
+        top: -3px;
+    }
+    
+    .navbar {
+        font-weight: bold;
+        font-size: 0.8rem;
+    }
+    
+    .hide {
+        opacity: 0;
+        max-height: 0;
+    }
+    
+    #trigger {
+        position: absolute;
+        left: -999em;
+    }
+    
+    #container input[type="checkbox"]:checked+div {
+        max-height: 99em;
+        opacity: 1;
+        height: auto;
+        overflow: hidden;
+    }
+    
+    .section1 {
+        background-image: url("../img/img1.jpg");
+        background-color: rgb(255, 255, 255);
+        background-size: cover;
+        height: 700px;
+        transform: translateY(0px);
+        background-position: center;
+        background-repeat: no-repeat no-repeat;
+    }
+    
+    @media only screen and (max-width:992px) {
+        .section1 {
+            height: 500px;
+        }
+        .section1::after {
+            content: "";
+            background-image: url("../img/img1.jpg");
+            opacity: 0.5;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: -1;
+        }
+    }
+    
+    @media only screen and (max-width:760px) {
+        .section1 {
+            height: 400px;
+        }
+    }
+    
+    @media only screen and (max-width:592px) {}
+    
+    .slogen .redy {
+        color: orange;
+        border: 1px solid orange;
+        background: none;
+        border-radius: 3px;
+        display: inline-block;
+    }
+    
+    .slogen .redy p {
+        padding: 10px;
+        line-height: 10px;
+        margin-bottom: 0;
+    }
+    
+    .slogen .improve {
+        font-size: 3.5em;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+    }
+    
+    .slogen .bst {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        color: #ccc;
+        font-size: 1.4rem;
+    }
+    
+    .slogen .pcl {
+        color: orange;
+    }
+    
+    .slogen .lor {
+        font-size: 1.5rem;
+        color: gray;
+    }
+    
+    @media only screen and (max-width:992px) {
+        .slogen .improve {
+            font-size: 2rem;
+        }
+        .slogen .bst {
+            font-weight: 600;
+            color: black;
+            font-size: 1rem;
+        }
+        .slogen .lor {
+            font-size: 1rem;
+            color: black;
+        }
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .slogen .improve {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+        .slogen .bst {
+            font-weight: 600;
+            color: black;
+            font-size: 0.7rem;
+        }
+        .slogen .lor {
+            font-size: 0.7rem;
+            color: black;
+        }
+    }
+    
+    .slogen .btn-cl {
+        background: orange;
+        color: white;
+        border-color: orange;
+        font-weight: bold;
+        font-size: 0.8rem;
+    }
+    
+    .slogen .btn-gr {
+        background: none;
+        color: black;
+        border-color: #ccc;
+        font-weight: 400;
+        font-size: 0.8rem;
+    }
+    
+    .slogen .btn-cl:hover {
+        background: darkgray;
+        border-color: darkgray;
+        color: white;
+        position: relative;
+        top: -3px;
+    }
+    
+    .slogen .btn-gr:hover {
+        background: white;
+        color: black;
+        position: relative;
+        top: -3px;
+    }
+    /* ------------------------ Section 2 ------------------------ */
+    
+    .logos {
+        height: 200px;
+        background: white;
+        border-bottom: 1px #eee solid;
+    }
+    
+    .logos .item {
+        width: 7rem;
+        margin-top: 80px;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .logos {
+            height: 150px;
+        }
+        .logos .item {
+            width: 5rem;
+            margin-top: 55px;
+        }
+    }
+    
+    @media only screen and (max-width:592px) {
+        .logos {
+            height: 100px;
+        }
+        .logos .item {
+            width: 4rem;
+            margin-top: 40px;
+        }
+    }
+    /* ------------------------ Section 3 ------------------------ */
+    
+    .headservices {
+        text-align: center;
+        margin-top: 2rem;
+    }
+    
+    .headservices .redy {
+        color: orange;
+        border: 1px solid orange;
+        background: none;
+        border-radius: 3px;
+        display: inline-block;
+    }
+    
+    .headservices .redy p {
+        padding: 10px;
+        line-height: 10px;
+        margin-bottom: 0;
+        color: orange
+    }
+    
+    .headservices p {
+        color: grey;
+    }
+    
+    .left1 p {
+        font-family: 'Noto Sans HK', sans-serif;
+        color: grey;
+        font-size: 11px;
+    }
+    
+    .left1 h3 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    .left1 {
+        float: left;
+        width: 70%;
+        text-align: right;
+        padding-top: 5%;
+        font-size: 15px;
+        margin: 3rem 0;
+    }
+    
+    .right1 {
+        float: right;
+        width: 30%;
+        margin: 3rem 0;
+    }
+    
+    @media only screen and (max-width:992px) {
+        .left1 {
+            margin: 2rem 0;
+        }
+        .right1 {
+            margin: 2rem 0;
+        }
+    }
+    
+    @media only screen and (max-width:768px) {
+        .left1 {
+            margin: 1rem 0;
+        }
+        .right1 {
+            margin: 1rem 0;
+        }
+    }
+    
+    .right2 p {
+        font-family: 'Noto Sans HK', sans-serif;
+        color: grey;
+        font-size: 11px;
+    }
+    
+    .right2 h3 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    .right2 {
+        float: right;
+        width: 70%;
+        text-align: left;
+        padding-top: 5%;
+        font-size: 15px;
+        margin: 3rem 0;
+    }
+    
+    .left2 {
+        float: left;
+        width: 30%;
+        margin: 3rem 0;
+    }
+    
+    @media only screen and (max-width:992px) {
+        .left2 {
+            margin: 2rem 0;
+        }
+        .right2 {
+            margin: 2rem 0;
+        }
+    }
+    
+    @media only screen and (max-width:768px) {
+        .left2 {
+            margin: 1rem 0;
+        }
+        .right2 {
+            margin: 1rem 0;
+        }
+    }
+    
+    .imgu img {
+        max-width: 100%;
+    }
+    
+    #col-2 {
+        margin-top: 175px;
+    }
+    /* ------------------------ Section 4 done by Nour / Nour------------------------ */
+    
+    .section4 {
+        background: url("../img/priceTable.png") no-repeat center center;
+        background-size: cover;
+        background-origin: border-box;
+        padding: 100px 0;
+        position: relative;
+        overflow: hidden;
+        margin: 0;
+    }
+    
+    .section4 .swtch {
+        height: 34px;
+    }
+    
+    .section4 .swtch .moye {
+        font-weight: 600;
+        top: 5px;
+    }
+    
+    .section4 .switchs {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+    }
+    
+    .switchs input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    
+    .sliders {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #2196F3;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    
+    .sliders:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 30px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    
+    input:checked+.sliders {
+        background-color: orange;
+    }
+    
+    input:focus+.sliders {
+        box-shadow: 0 0 1px #2196F3;
+    }
+    
+    input:checked+.sliders:before {
+        -webkit-transform: translateX(22px);
+        -ms-transform: translateX(22px);
+        transform: translateX(22px);
+    }
+    /* Rounded sliders */
+    
+    .sliders.rounds {
+        border-radius: 5px;
+    }
+    
+    .sliders.rounds:before {
+        border-radius: 5%;
+    }
+    
+    .section4 .price {
+        color: orange;
+        border: 1px solid orange;
+        background: none;
+        border-radius: 3px;
+        display: inline-block;
+    }
+    
+    .section4 .price p {
+        padding: 10px;
+        line-height: 10px;
+        margin-bottom: 0;
+    }
+    
+    .section4 h2 {
+        font-size: 1.50em;
+        font-weight: 700;
+        padding: 10px 0;
+        margin: 10px 0 20px 0;
+    }
+    
+    .card-title h4 {
+        font-weight: 700;
+        font-size: 1.2em;
+        color: rgb(92, 87, 87);
+        margin: 10px 0 10px 0;
+    }
+    
+    .section4 .price5 {
+        font-weight: 600;
+        font-size: 4em;
+    }
+    
+    .section4 .price5 p .dollar {
+        font-size: 0.4em;
+        font-weight: 300;
+        vertical-align: top;
+    }
+    
+    .section4 .list-group-item {
+        border: none;
+    }
+    
+    .section4 .fa-check-circle {
+        color: orange;
+    }
+    
+    .section4 .fa-minus-circle {
+        color: grey;
+    }
+    
+    .section4 .minus-item {
+        color: rgb(192, 185, 185);
+    }
+    
+    .section4 .btn-cl {
+        background: orange;
+        color: white;
+        border-color: orange;
+        font-weight: 600;
+        font-size: 1em;
+    }
+    
+    .section4 .btn-gr {
+        background: none;
+        color: rgb(92, 87, 87);
+        border-color: #ccc;
+        font-weight: 600;
+        font-size: 1em;
+    }
+    
+    .section4 .btn-cl:hover {
+        position: relative;
+        top: -3px;
+    }
+    
+    .section4 .btn-gr:hover {
+        position: relative;
+        top: -3px;
+    }
+    /* The switch - the box around the slider */
+    
+    .section4 .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+    }
+    /* Hide default HTML checkbox */
+    
+    .section4 .switch input {
+        display: none;
+    }
+    /* The slider */
+    
+    .section4 .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    
+    .section4 .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    
+    .section4 input.warning:checked+.slider {
+        background-color: #FFC107;
+    }
+    
+    .section4 input:focus+.slider {
+        box-shadow: 0 0 1px #2196F3;
+    }
+    
+    .section4 input:checked+.slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+    /* ------------------------ Section 5 done by Nour/Nour ------------------------ */
+    
+    .section5 {
+        background: url("../img/img11.jpg") no-repeat center center;
+        background-size: cover;
+        background-origin: border-box;
+        padding: 100px 0;
+        position: center;
+        overflow: hidden;
+        margin: 0;
+    }
+    
+    .section5 .careers {
+        color: orange;
+        border: 1px solid orange;
+        background: none;
+        border-radius: 3px;
+        display: inline-block;
+    }
+    
+    .section5 .careers p {
+        padding: 10px;
+        line-height: 10px;
+        margin-bottom: 0;
+    }
+    
+    .section5 h2 {
+        font-size: 1.50em;
+        font-weight: 700;
+        padding: 10px 0;
+        margin: 10px 0 20px 0;
+    }
+    
+    .section5 .form-container {
+        background: #fff;
+        padding: 30px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px 0px gray;
+    }
+    
+    .section5 h3 {
+        font-size: 1.3em;
+        font-weight: 700;
+        padding: 10px 0;
+    }
+    
+    .section5 label {
+        font-weight: 700;
+        font-size: 0.85em;
+    }
+    
+    .section5 .btn-primary {
+        background-color: orange !important;
+        border-color: orange !important;
+        font-weight: 700 !important;
+    }
+    
+    .section5 .btn-primary:hover {
+        position: relative;
+        top: -3px;
+    }
+    
+    .section5 .container .playicon {
+        text-align: center;
+    }
+    
+    .section5 .playicon:hover {
+        position: relative;
+        top: -3px;
+    }
+    
+    .modal-content {
+        background: transparent !important;
+        border: none !important;
+    }
+    /* ------------------------ Section 6 done by Nour /Nour ------------------------ */
+    
+    .section6 {
+        background: url("../img/img12.jpg") no-repeat center center;
+        background-size: cover;
+        background-origin: border-box;
+        padding: 100px 0;
+        position: relative;
+        overflow: hidden;
+        margin: 0;
+    }
+    
+    .section6 .head {
+        text-align: center;
+        margin-bottom: 4%;
+    }
+    
+    .section6 .projects {
+        color: orange;
+        border: 1px solid orange;
+        background: none;
+        border-radius: 3px;
+        display: inline-block;
+    }
+    
+    .section6 .projects p {
+        padding: 10px;
+        line-height: 10px;
+        margin-bottom: 0;
+    }
+    
+    .section6 h2 {
+        font-size: 1.50em;
+        font-weight: 700;
+        padding: 10px 0;
+        margin: 10px 0 20px 0;
+    }
+    
+    .section6 h4 {
+        font-size: 1.2em;
+        font-weight: 600;
+        color: rgb(32, 32, 32);
+        margin-top: 10px;
+    }
+    
+    .section6 img:hover {
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+    }
+    
+    .section6 .container .btncenter {
+        text-align: center;
+    }
+    
+    .section6 .btn-primary {
+        background-color: orange !important;
+        border-color: orange !important;
+        font-weight: 700 !important;
+        margin: 25px 0 25px 0;
+        padding: 5px 15px 5px 15px;
+    }
+    
+    .section6 .btn-primary:hover {
+        position: relative;
+        top: -3px;
+    }
+    /* ------------------------ Section 7 done by Nour /Nour------------------------ */
+    
+    .section7 {
+        margin-top: 100px;
+    }
+    
+    .section7 div {
+        text-align: center;
+    }
+    
+    .section7 h3 {
+        margin: 25px 0 25px 0;
+        font-size: 1em;
+        font-weight: 700;
+    }
+    
+    .section7 p {
+        color: rgb(109, 105, 105);
+    }
+    /* ------------------------ Section7-1 done by Nour and Ammar /Nour ------------------------ */
+    
+    .section7-1 {
+        background: url("../img/testimonials.jpg") no-repeat center center;
+        background-size: cover;
+        background-origin: border-box;
+        padding: 100px 0;
+        position: relative;
+        overflow: hidden;
+        margin: 0;
+    }
+    
+    .section7-1 .head {
+        text-align: center;
+        margin-bottom: 3%;
+    }
+    
+    .section7-1 .test {
+        color: orange;
+        border: 1px solid orange;
+        background: none;
+        border-radius: 3px;
+        display: inline-block;
+    }
+    
+    .section7-1 .test p {
+        padding: 10px;
+        line-height: 10px;
+        margin-bottom: 0;
+    }
+    
+    .section7-1 h2 {
+        font-size: 1.50em;
+        font-weight: 700;
+        padding: 10px 0;
+        margin: 10px 0 20px 0;
+    }
+    
+    .carou .item.card {
+        border: none;
+        width: 18rem;
+    }
+    
+    .carou .item.card img {
+        width: 30%;
+        margin: 0 auto;
+    }
+    
+    @media only screen and (max-width: 1200px) {
+        .carou .item.card {
+            width: 80%;
+        }
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .carou .item.card {
+            width: 100%;
+        }
+    }
+    
+    .carou img {
+        border-radius: 50%;
+    }
+    /* ------------------------ Section 8 ------------------------ */
+    /* Part 1 */
+    
+    .section8 .Latesta .redy {
+        color: orange;
+        border: 1px solid orange;
+        background: none;
+        border-radius: 3px;
+        display: inline-block;
+    }
+    
+    .section8 .Latesta .redy p {
+        padding: 10px;
+        line-height: 10px;
+        margin-bottom: 0;
+    }
+    
+    .heading-block {
+        margin-bottom: 50px;
+    }
+    
+    .Latesta {
+        margin-bottom: 50px;
+        margin-top: 50px;
+        text-align: center !important;
+    }
+    
+    .Latesta h3 {
+        margin-top: 20px;
+        margin-bottom: 0;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #333;
+    }
+    /* Part 2 */
+    
+    .entry {
+        position: relative;
+        margin: 0 0 50px
+    }
+    
+    .entry-image {
+        margin-bottom: 30px
+    }
+    
+    .entry-image,
+    .entry-image .slide a,
+    .entry-image img,
+    .entry-image>a {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    
+    .entry-image img {
+        border-radius: 3px;
+    }
+    
+    .entry-title h3 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #333;
+    }
+    
+    .trying {
+        margin-left: -45px !important;
+    }
+    
+    .section8 .entry-meta {
+        list-style: none;
+        color: gray;
+    }
+    
+    .section8 .entry-meta .far {
+        margin: 15px 0 20px 0;
+        padding: 5px;
+    }
+    /* Part 3 */
+    
+    .contactus {
+        text-align: center !important;
+        background-image: url("../img/img12.jpg");
+        padding: 200px 40px;
+    }
+    
     .contactus h3 {
-        size: 1rem;
+        margin-top: 20px;
+        margin-bottom: 0;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #333;
     }
+    
     .contactus h5 {
-        size: 1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #333;
     }
-}
-
-.contactus .btn-cl {
-    background: orange;
-    color: white;
-    border-color: orange;
-    font-weight: bold;
-    font-size: 0.8rem;
-}
-
-
-/* ------------------------ Section 9 ------------------------ */
-
-footer .br {
-    border-bottom: #ddd 1px solid;
-}
-
-footer .ft-lg {
-    border-right: 1px solid #ddd;
-    float: left;
-    min-width: 150px;
-}
-
-footer .ft-lg h2 {
-    line-height: 50px;
-}
-
-footer hr {
-    color: #ddd;
-}
-
-footer {
-    font-weight: 300;
-    font-size: 13px;
-}
-
-footer strong {
-    font-weight: bold;
-}
-
-footer .sad {
-    width: 100%;
-}
-
-footer .sad a {
-    color: black;
-}
-
-footer .siz h3 {
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-footer .icoon {
-    line-height: 62px;
-    display: block;
-    position: absolute;
-    width: 64px;
-    height: 64px;
-    top: 0;
-    left: 0;
-    font-size: 2rem;
-    line-height: 64px;
-}
-
-footer .icoon2 {
-    line-height: 62px;
-    display: block;
-    position: absolute;
-    width: 64px;
-    height: 64px;
-    top: 0;
-    left: 0;
-    font-size: 2rem;
-    line-height: 64px;
-    margin-top: 55px;
-}
-
-footer .btn-cl {
-    background: orange;
-    color: white;
-    border-color: orange;
-    font-weight: bold;
-    font-size: 0.8rem;
-}
-
-footer .btn-cl:hover {
-    background: darkgray;
-    border-color: darkgray;
-    color: white;
-    position: relative;
-}
-
-footer .iconcon {
-    margin: 0 5px 5px 0;
-    width: 40px;
-    height: 40px;
-    font-size: 40px;
-    line-height: 38px;
-}
-
-footer span.tex {
-    font-size: 0.6rem;
-}
-
-footer .fo-bg {
-    background-image: url("../img/footer.png");
-    background-color: rgb(255, 255, 255);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat no-repeat;
-}
-
-.heighttt {
-    padding: 100px;
-}
-
-footer .copyright a {
-    color: black;
-}
-
-footer .copyright a:hover {
-    text-decoration: none;
-}
-
-footer .cr-links a {
-    border-bottom: black dotted;
-}
-
-footer .sc-links a {
-    margin: 0 10px;
-}
-
-
-/*<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">*/
-
-
-/* ------------------------ Section 10 ------------------------ */
+    
+    @media only screen and (max-width: 768px) {
+        .contactus h3 {
+            size: 1rem;
+        }
+        .contactus h5 {
+            size: 1rem;
+        }
+    }
+    
+    .contactus .btn-cl {
+        background: orange;
+        color: white;
+        border-color: orange;
+        font-weight: bold;
+        font-size: 0.8rem;
+    }
+    /* ------------------------ Section 9 ------------------------ */
+    
+    footer .br {
+        border-bottom: #ddd 1px solid;
+    }
+    
+    footer .ft-lg {
+        border-right: 1px solid #ddd;
+        float: left;
+        min-width: 150px;
+    }
+    
+    footer .ft-lg h2 {
+        line-height: 50px;
+    }
+    
+    footer hr {
+        color: #ddd;
+    }
+    
+    footer {
+        font-weight: 300;
+        font-size: 13px;
+    }
+    
+    footer strong {
+        font-weight: bold;
+    }
+    
+    footer .sad {
+        width: 100%;
+    }
+    
+    footer .sad a {
+        color: black;
+    }
+    
+    footer .siz h3 {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    
+    footer .icoon {
+        line-height: 62px;
+        display: block;
+        position: absolute;
+        width: 64px;
+        height: 64px;
+        top: 0;
+        left: 0;
+        font-size: 2rem;
+        line-height: 64px;
+    }
+    
+    footer .icoon2 {
+        line-height: 62px;
+        display: block;
+        position: absolute;
+        width: 64px;
+        height: 64px;
+        top: 0;
+        left: 0;
+        font-size: 2rem;
+        line-height: 64px;
+        margin-top: 55px;
+    }
+    
+    footer .btn-cl {
+        background: orange;
+        color: white;
+        border-color: orange;
+        font-weight: bold;
+        font-size: 0.8rem;
+    }
+    
+    footer .btn-cl:hover {
+        background: darkgray;
+        border-color: darkgray;
+        color: white;
+        position: relative;
+    }
+    
+    footer .iconcon {
+        margin: 0 5px 5px 0;
+        width: 40px;
+        height: 40px;
+        font-size: 40px;
+        line-height: 38px;
+    }
+    
+    footer span.tex {
+        font-size: 0.6rem;
+    }
+    
+    footer .fo-bg {
+        background-image: url("../img/footer.png");
+        background-color: rgb(255, 255, 255);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat no-repeat;
+    }
+    
+    .heighttt {
+        padding: 100px;
+    }
+    
+    footer .copyright a {
+        color: black;
+    }
+    
+    footer .copyright a:hover {
+        text-decoration: none;
+    }
+    
+    footer .cr-links a {
+        border-bottom: black dotted;
+    }
+    
+    footer .sc-links a {
+        margin: 0 10px;
+    }
+    /*<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">*/
+    /* ------------------------ Section 10 ------------------------ */
