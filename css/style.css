@@ -375,7 +375,7 @@
 }
 
 
-/* ------------------------ Section 4 ------------------------ */
+/* ------------------------ Section 4 done by Nour / Nour------------------------ */
 
 .section4 {
     background: url("../img/priceTable.png") no-repeat center center;
@@ -430,6 +430,12 @@
 }
 .section4 .fa-check-circle{
     color:orange;
+}
+.section4 .fa-minus-circle{
+    color:grey;
+}
+.section4 .minus-item{
+    color: rgb(192, 185, 185);
 }
 
 .section4 .btn-cl {
@@ -567,20 +573,25 @@
     font-weight: 700 !important;
 }
 
-.section5 i {
-    color: orange;
+.section5 .btn-primary:hover {
+    position: relative;
+    top: -3px;
 }
 
 .section5 .container .playicon {
     text-align: center;
 }
+.section5 .playicon:hover {
+    position: relative;
+    top: -3px;
+}
+.modal-content{
+    background: transparent !important;
+    border: none !important;
 
+}
 
 /* ------------------------ Section 6 done by Nour /Nour ------------------------ */
-
-.section6 .container .btncenter {
-    text-align: center;
-}
 
 .section6 {
     background: url("../img/img12.jpg") no-repeat center center;
@@ -618,24 +629,29 @@
     margin: 10px 0 20px 0 ;
 }
 
-.section6 h3 {
-    font-size: 1.50em;
-    font-weight: 700;
-    padding-top: 5px;
-}
-
 .section6 h4 {
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 600;
-    color: grey;
+    color:rgb(32, 32, 32);
+    margin-top: 10px;
 }
-
+.section6 img:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+  }
+.section6 .container .btncenter {
+    text-align: center;
+}
 .section6 .btn-primary {
     background-color: orange !important;
     border-color: orange !important;
     font-weight: 700 !important;
     margin: 25px 0 25px 0;
     padding: 5px 15px 5px 15px;
+}
+.section6 .btn-primary:hover {
+    position: relative;
+    top: -3px;
 }
 
 
@@ -651,12 +667,15 @@
 
 .section7 h3 {
     margin: 25px 0 25px 0;
-    font-size: 20px;
+    font-size: 1em;
     font-weight: 700;
+}
+.section7 p {
+    color: rgb(109, 105, 105);
 }
 
 
-/* ------------------------ Section7-1 done by Nour /Nour ------------------------ */
+/* ------------------------ Section7-1 done by Nour and Ammar /Nour ------------------------ */
 
 .section7-1 {
     background: url("../img/testimonials.jpg") no-repeat center center;
