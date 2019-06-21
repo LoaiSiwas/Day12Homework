@@ -744,6 +744,11 @@
     width: 18rem;
 }
 
+.carou .item.card img {
+    width: 30%;
+    margin: 0 auto;
+}
+
 @media only screen and (max-width: 1200px) {
     .carou .item.card {
         width: 80%;
@@ -923,6 +928,10 @@ footer .sad {
     width: 100%;
 }
 
+footer .sad a {
+    color: black;
+}
+
 footer .siz h3 {
     font-size: 1rem;
     font-weight: 600;
@@ -978,6 +987,34 @@ footer .iconcon {
 
 footer span.tex {
     font-size: 0.6rem;
+}
+
+footer .fo-bg {
+    background-image: url("../img/footer.png");
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat no-repeat;
+}
+
+.heighttt {
+    padding: 100px;
+}
+
+footer .copyright a {
+    color: black;
+}
+
+footer .copyright a:hover {
+    text-decoration: none;
+}
+
+footer .cr-links a {
+    border-bottom: black dotted;
+}
+
+footer .sc-links a {
+    margin: 0 10px;
 }
 
 
