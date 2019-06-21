@@ -27,8 +27,8 @@
     <header class="transparent-header floating-header clearfix">
         <div class="section1">
             <!-- loai and ammar will work on this / loai -->
-            <nav class="socialbar mx-5 px-2 mt-2 md-center">
-                <ul class="nav half1">
+            <nav class="socialbar container d-flex mx-5 px-2 mt-2 md-center">
+                <ul class="nav col-12 col-md-6 justify-content-center justify-content-md-start">
                     <li class="nav-item">
                         <a class="nav-link active" href="#">Home</a>
                     </li>
@@ -46,7 +46,7 @@
                         </div>
                     </li>
                 </ul>
-                <ul class="nav half2 d-none d-md-flex justify-content-end">
+                <ul class="nav col-md-6 d-none d-md-flex justify-content-end">
                     <li class="nav-item">
                         <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i>
                           </a>
@@ -519,10 +519,10 @@
                 </div>
                 <!--end of Header / Nour-->
                 <div class="row">
-                    <div class="col-12 carou justify-content-center">
+                    <div class="col-12 carou justify-content-around">
                         <div class="owl-carousel owl-theme">
 
-                            <div class="item card" style="width: 18rem;">
+                            <div class="item card">
                                 <img src="img/img22.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -530,7 +530,7 @@
                             </div>
 
 
-                            <div class="item card" style="width: 18rem;">
+                            <div class="item card">
                                 <img src="img/img23.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -538,7 +538,7 @@
                             </div>
 
 
-                            <div class="item card" style="width: 18rem;">
+                            <div class="item card">
                                 <img src="img/img24.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -546,7 +546,7 @@
                             </div>
 
 
-                            <div class="item card" style="width: 18rem;">
+                            <div class="item card">
                                 <img src="img/img23.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -554,7 +554,7 @@
                             </div>
 
 
-                            <div class="item card" style="width: 18rem;">
+                            <div class="item card">
                                 <img src="img/img22.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -562,14 +562,14 @@
                             </div>
 
 
-                            <div class="item card" style="width: 18rem;">
+                            <div class="item card">
                                 <img src="img/img24.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                             </div>
 
-                            <div class="item card" style="width: 18rem;">
+                            <div class="item card">
                                 <img src="img/img24.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -577,7 +577,7 @@
                             </div>
 
 
-                            <div class="item card" style="width: 18rem;">
+                            <div class="item card">
                                 <img src="img/img23.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -585,7 +585,7 @@
                             </div>
 
 
-                            <div class="item card" style="width: 18rem;">
+                            <div class="item card">
                                 <img src="img/img22.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -596,14 +596,28 @@
                         </div>
                         <script>
                             $(document).ready(function() {
-                                var owl = $('.owl-carousel');
-                                owl.owlCarousel({
-                                    items: 3,
-                                    loop: true,
-                                    margin: 10,
+                                $('.owl-carousel').owlCarousel({
+                                    item: 3,
+                                    singleItem: true,
                                     autoplay: true,
-                                    autoplayTimeout: 3000,
-                                    autoplayHoverPause: true
+                                    autoplayTimeout: 5000,
+                                    loop: true,
+                                    nav: true,
+                                    responsiveClass: true,
+                                    responsive: {
+                                        0: {
+                                            items: 1,
+                                            dots: false
+                                        },
+                                        760: {
+                                            items: 2,
+                                            dots: false
+                                        },
+
+                                        1200: {
+                                            items: 3
+                                        }
+                                    }
                                 });
                             })
                         </script>
@@ -784,6 +798,17 @@
                                 <a href="#"> <span class="tex text-decoration-none text-black-50"><strong>Subscribe</strong><br>to RSS Feeds</span></a>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container d-flex clearfix">
+                <div class="col-md-8 col-12">
+                    Copyrights © 2018 All Rights Reserved by Canvas Inc.<br>
+                    <div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
+                </div>
+                <div class="col-md-8 d-none d-md-flex col_last tright">
+                    <div class="copyrights-menu copyright-links clearfix">
+                        <a href="#">Home</a>/<a href="#">About Us</a>/<a href="#">Team</a>/<a href="#">Clients</a>/<a href="#">FAQs</a>/<a href="#">Contact</a>
                     </div>
                 </div>
             </div>

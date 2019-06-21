@@ -24,7 +24,6 @@
 /* ------------------------ Section 1 ------------------------ */
 
 .socialbar .nav-link {
-    font-family: Arial, Helvetica, sans-serif;
     color: gray;
     font-weight: bold;
     font-size: 0.8rem;
@@ -32,24 +31,6 @@
 
 .socialbar .nav-link:hover {
     background: #ccc;
-}
-
-.socialbar .half1 {
-    width: 50%;
-    float: left;
-}
-
-.socialbar .half2 {
-    width: 50%;
-    float: left;
-}
-
-@media only screen and (max-width:768px) {
-    .socialbar .half1 {
-        width: 100%;
-        float: none;
-        margin: 0 auto;
-    }
 }
 
 .socialbar .nav-link img {
@@ -69,7 +50,7 @@
 .navbar-light .navbar-nav .active>.nav-link,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-nav .nav-link.active {
-    color: rgba(240, 160, 11, 0.993);
+    color: orange;
 }
 
 .navbar .btn-cl {
@@ -558,8 +539,6 @@
     margin: 0;
 }
 
-@media only screen and (max-width: 768px) {}
-
 .section5 .careers {
     color: orange;
     border: 1px solid orange;
@@ -668,6 +647,10 @@
     color: grey;
 }
 
+.section6 .btncenter {
+    margin: 0 auto;
+}
+
 .section6 .btn-primary {
     background-color: orange !important;
     border-color: orange !important;
@@ -732,8 +715,21 @@
     margin: 10px 0 20px 0;
 }
 
-.carou .card {
+.carou .item.card {
     border: none;
+    width: 18rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .carou .item.card {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .carou .item.card {
+        width: 100%;
+    }
 }
 
 .carou img {
