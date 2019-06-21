@@ -115,7 +115,7 @@
     background-size: cover;
     height: 700px;
     transform: translateY(0px);
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat no-repeat;
 }
 
@@ -246,7 +246,34 @@
 /* ------------------------ Section 2 ------------------------ */
 
 .logos {
-    height: 100px;
+    height: 200px;
+    background: white;
+    border-bottom: 1px #eee solid;
+}
+
+.logos .item {
+    width: 7rem;
+    margin-top: 80px;
+}
+
+@media only screen and (max-width: 768px) {
+    .logos {
+        height: 150px;
+    }
+    .logos .item {
+        width: 5rem;
+        margin-top: 55px;
+    }
+}
+
+@media only screen and (max-width:592px) {
+    .logos {
+        height: 100px;
+    }
+    .logos .item {
+        width: 4rem;
+        margin-top: 40px;
+    }
 }
 
 
@@ -399,27 +426,28 @@
     padding: 10px;
     line-height: 10px;
     margin-bottom: 0;
-
 }
 
 .section4 h2 {
     font-size: 1.50em;
     font-weight: 700;
     padding: 10px 0;
-    margin: 10px 0 20px 0 ;
+    margin: 10px 0 20px 0;
 }
+
 .card-title h4 {
     font-weight: 700;
     font-size: 1.2em;
-    color:rgb(92, 87, 87);
+    color: rgb(92, 87, 87);
     margin: 10px 0 10px 0;
 }
-.section4 .price5{
+
+.section4 .price5 {
     font-weight: 600;
     font-size: 4em;
-
 }
-.section4 .price5 p .dollar{
+
+.section4 .price5 p .dollar {
     font-size: 0.4em;
     font-weight: 300;
     vertical-align: top;
@@ -428,18 +456,19 @@
 .section4 .list-group-item {
     border: none;
 }
-.section4 .fa-check-circle{
-    color:orange;
+
+.section4 .fa-check-circle {
+    color: orange;
 }
 
 .section4 .btn-cl {
-    background:orange ;
+    background: orange;
     color: white;
     border-color: orange;
     font-weight: 600;
     font-size: 1em;
 }
-    
+
 .section4 .btn-gr {
     background: none;
     color: rgb(92, 87, 87);
@@ -447,29 +476,37 @@
     font-weight: 600;
     font-size: 1em;
 }
-    
+
 .section4 .btn-cl:hover {
     position: relative;
     top: -3px;
 }
-    
+
 .section4 .btn-gr:hover {
     position: relative;
     top: -3px;
 }
+
+
 /* The switch - the box around the slider */
+
 .section4 .switch {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
-   
-  }
-  
-  /* Hide default HTML checkbox */
-.section4 .switch input {display:none;}
-  
-  /* The slider */
+}
+
+
+/* Hide default HTML checkbox */
+
+.section4 .switch input {
+    display: none;
+}
+
+
+/* The slider */
+
 .section4 .slider {
     position: absolute;
     cursor: pointer;
@@ -480,8 +517,8 @@
     background-color: #ccc;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  
+}
+
 .section4 .slider:before {
     position: absolute;
     content: "";
@@ -492,19 +529,21 @@
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-.section4 input.warning:checked + .slider {
+}
+
+.section4 input.warning:checked+.slider {
     background-color: #FFC107;
-  }
-.section4 input:focus + .slider {
+}
+
+.section4 input:focus+.slider {
     box-shadow: 0 0 1px #2196F3;
-  }
-  
-.section4 input:checked + .slider:before {
+}
+
+.section4 input:checked+.slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
-  }
+}
 
 
 /* ------------------------ Section 5 done by Nour/Nour ------------------------ */
@@ -518,9 +557,8 @@
     overflow: hidden;
     margin: 0;
 }
-@media only screen and (max-width: 768px) {
-    
-}
+
+@media only screen and (max-width: 768px) {}
 
 .section5 .careers {
     color: orange;
@@ -540,7 +578,7 @@
     font-size: 1.50em;
     font-weight: 700;
     padding: 10px 0;
-    margin: 10px 0 20px 0 ;
+    margin: 10px 0 20px 0;
 }
 
 .section5 .form-container {
@@ -615,7 +653,7 @@
     font-size: 1.50em;
     font-weight: 700;
     padding: 10px 0;
-    margin: 10px 0 20px 0 ;
+    margin: 10px 0 20px 0;
 }
 
 .section6 h3 {
@@ -691,7 +729,7 @@
     font-size: 1.50em;
     font-weight: 700;
     padding: 10px 0;
-    margin: 10px 0 20px 0 ;
+    margin: 10px 0 20px 0;
 }
 
 .carou .card {
@@ -775,9 +813,11 @@
     letter-spacing: 1px;
     color: #333;
 }
+
 .trying {
     margin-left: -45px !important;
 }
+
 .section8 .entry-meta {
     list-style: none;
     color: gray;
