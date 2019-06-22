@@ -60,8 +60,6 @@
     }
     
     .navbar .btn-cl:hover {
-        background: darkgray;
-        border-color: darkgray;
         position: relative;
         top: -3px;
     }
@@ -190,9 +188,6 @@
     }
     
     .slogen .btn-cl:hover {
-        background: darkgray;
-        border-color: darkgray;
-        color: white;
         position: relative;
         top: -3px;
     }
@@ -891,6 +886,11 @@
         font-weight: bold;
         font-size: 0.8rem;
     }
+    
+    .contactus .btn-cl:hover {
+        position: relative;
+        top: -3px;
+    }
     /* ------------------------ Section 9 ------------------------ */
     
     footer .br {
@@ -983,6 +983,19 @@
     
     footer span.tex {
         font-size: 0.6rem;
+    }
+    
+    footer .fa-rss-square {
+        color: orange;
+    }
+    
+    footer .iconcon:hover {
+        position: relative;
+        top: -3px;
+    }
+    
+    footer .fa-rss-square:hover {
+        color: rgb(255, 145, 0);
     }
     
     footer .fo-bg {
