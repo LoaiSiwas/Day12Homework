@@ -130,12 +130,72 @@
 }
 
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 501px) and (max-width: 900px) {
     .col-3.text-right.mb-5.ml-5.mr-0 {
         display: none;
     }
 #marginfix2 {
-        margin-left: 15% !important;
+        margin-left: auto !important;
+    }
+    .col-4 {
+        flex: 0 0 50%!important;
+        max-width: 50%!important;
+    }
+    .col-9 {
+        max-width: 60%!important;
+        flex: 0 0 60%!important;
+    }
+    .col-3 {
+        max-width: 30%!important;
+        flex: 0 0 40%!important;
+    }
+    #col-44fix {
+        flex: 0 0 33.33% !important;
+        max-width: 33.33% !important;
+        }
+    #cardfixxx {
+        flex: 0 0 33.33% !important;
+        max-width: 33.33% !important;
+        }
+    .offset-2 {
+            margin-left: 0%!important;
+        }
+    #cardfixxx {
+    margin-top: auto!important;
     }
 }
 
+@media only screen and (max-width: 501px) {
+    #marginfix2 {
+        margin-left:  auto!important;
+    }
+    .col-4 {
+        flex: 0 0 88%!important;
+        max-width: 88%!important;
+    }
+    #mobilephone {
+            display: flex;
+            flex: 0 0 88%;
+            max-width: 88%;
+            margin-left: 1rem !important;
+    }
+    #col-44fix {
+    flex: 0 0 88% !important;
+    max-width: 88% !important;
+    margin: 0 auto;
+    }
+    #cardfixxx {
+    flex: 0 0 88% !important;
+    max-width: 88% !important;
+    margin-top: 1rem !important;
+    margin: 0 auto;
+    }
+    .services p.headline {
+    width: 84%;
+    }
+}    
+
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+    #cardfixx2 {
+        font-size: 0.88rem;
+    }
