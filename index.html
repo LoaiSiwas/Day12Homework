@@ -19,11 +19,33 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <!-- Top button / loai -->
+    
 </head>
 
 <!-- Add main page stracture / loai -->
 
 <body>
+    <!-- Start Top Button / loai -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"> ^ </button>
+    <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+              } else {
+                document.getElementById("myBtn").style.display = "none";
+              }
+            }
+
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+    </script>
+    <!-- End Top Button /loai -->
     <header class="transparent-header floating-header clearfix">
         <div class="section1">
             <!-- loai and ammar will work on this / loai -->
