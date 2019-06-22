@@ -71,23 +71,6 @@
         font-size: 0.8rem;
     }
     
-    .hide {
-        opacity: 0;
-        max-height: 0;
-    }
-    
-    #trigger {
-        position: absolute;
-        left: -999em;
-    }
-    
-    #container input[type="checkbox"]:checked+div {
-        max-height: 99em;
-        opacity: 1;
-        height: auto;
-        overflow: hidden;
-    }
-    
     .section1 {
         background-image: url("../img/img1.jpg");
         background-color: rgb(255, 255, 255);
@@ -182,10 +165,10 @@
         .slogen .bst {
             font-weight: 600;
             color: black;
-            font-size: 0.7rem;
+            font-size: 0.9rem;
         }
         .slogen .lor {
-            font-size: 0.7rem;
+            font-size: 0.9rem;
             color: black;
         }
     }
@@ -223,23 +206,23 @@
     /* ------------------------ Section 2 ------------------------ */
     
     .logos {
-        height: 200px;
+        height: 100px;
         background: white;
         border-bottom: 1px #eee solid;
     }
     
     .logos .item {
         width: 7rem;
-        margin-top: 80px;
+        margin-top: 30px;
     }
     
     @media only screen and (max-width: 768px) {
         .logos {
-            height: 150px;
+            height: 100px;
         }
         .logos .item {
             width: 5rem;
-            margin-top: 55px;
+            margin-top: 35px;
         }
     }
     
@@ -387,6 +370,10 @@
         margin: 0;
     }
     
+    .section4 .swtch .mt-ne {
+        position: relative;
+    }
+    
     .section4 .swtch {
         height: 34px;
     }
@@ -470,13 +457,13 @@
         line-height: 10px;
         margin-bottom: 0;
     }
+    
     @media only screen and (min-width: 992px) {
         .best {
-        background: orange;
-        color: white;
+            background: orange;
+            color: white;
         }
-      }
-   
+    }
     
     .section4 h2 {
         font-size: 1.50em;
@@ -507,6 +494,7 @@
         display: inline-block;
         margin: 8px 0 0 0;
     }
+    
     .section4 .price5 .per {
         font-weight: 300;
         font-size: 16px;
@@ -558,58 +546,6 @@
     .section4 .btn-gr:hover {
         position: relative;
         top: -3px;
-    }
-    /* The switch - the box around the slider */
-    
-    .section4 .switch {
-        position: relative;
-        display: inline-block;
-        width: 60px;
-        height: 34px;
-    }
-    /* Hide default HTML checkbox */
-    
-    .section4 .switch input {
-        display: none;
-    }
-    /* The slider */
-    
-    .section4 .slider {
-        position: absolute;
-        cursor: pointer;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #ccc;
-        -webkit-transition: .4s;
-        transition: .4s;
-    }
-    
-    .section4 .slider:before {
-        position: absolute;
-        content: "";
-        height: 26px;
-        width: 26px;
-        left: 4px;
-        bottom: 4px;
-        background-color: white;
-        -webkit-transition: .4s;
-        transition: .4s;
-    }
-    
-    .section4 input.warning:checked+.slider {
-        background-color: #FFC107;
-    }
-    
-    .section4 input:focus+.slider {
-        box-shadow: 0 0 1px #2196F3;
-    }
-    
-    .section4 input:checked+.slider:before {
-        -webkit-transform: translateX(26px);
-        -ms-transform: translateX(26px);
-        transform: translateX(26px);
     }
     /* ------------------------ Section 5 done by Nour/Nour ------------------------ */
     
